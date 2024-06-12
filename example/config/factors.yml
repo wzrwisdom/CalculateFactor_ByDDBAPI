@@ -1,0 +1,6 @@
+close_ret:
+  fun_name: "close_ret"
+  args:
+    - "close"
+  kwargs:
+    shift: 1

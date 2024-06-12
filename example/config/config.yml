@@ -1,0 +1,12 @@
+start_time: '2023.04.20 09:30:00'
+end_time: '2023.04.20 10:00:00'
+
+sec_list: ['000002', '000004']
+
+features:
+    - 
+        ddb_name: 'dfs://CROSS_SECTION_6sec'
+        tb_features: !inc CROSS_SECTION_6sec.yml
+
+
+factors: !inc factors.yml

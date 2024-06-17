@@ -1,6 +1,13 @@
 close_ret:
-  fun_name: "close_ret"
+  func_name: "ret"
   args:
     - "close"
   kwargs:
     shift: 1
+
+pv_corr:
+  func_name: "roll_spear_corr"
+  args:
+    - "close"
+    - "vol"
+  kwargs: {}

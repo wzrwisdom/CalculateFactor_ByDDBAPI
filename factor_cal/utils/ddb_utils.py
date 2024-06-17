@@ -15,9 +15,12 @@ class DDBSessionSingleton:
     def close(self):
         self.session.close()
 
-    def get_session(self):
+    def get_session(self) -> ddb.session:
         return self.session
 
 # Create an instance of DDBSessionSingleton
 ddb_session = DDBSessionSingleton()
 ddb_session.connect("127.0.0.1", 11282, "wangzr", "wzr123456")
+
+# Obtain the session object from the singleton instance
+s = DDBSessionSingleton().get_session()

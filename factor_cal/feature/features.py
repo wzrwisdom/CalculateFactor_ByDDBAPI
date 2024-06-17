@@ -1,10 +1,6 @@
 import functools
-from factor_cal.utils import ddb_utils as du
-from factor_cal.feature.ddb_table import DDB_Table
-
-# Obtain the session object from the singleton instance
-s = du.DDBSessionSingleton().get_session()
-
+from factor_cal.utils.ddb_utils import s
+from factor_cal.feature.feat_table import DDB_FeatTable
 
 class Features:
     def __init__(self, config):
@@ -49,15 +45,27 @@ class Features:
             tbs = ddb_info['tb_features']
             for tb_name, tb_info in tbs.items():
                 # Create a DDB_Table object for each table
-                ddb_table = DDB_Table(ddb_name, tb_name, tb_info['time_col'], tb_info['sec_col'])
+                ddb_table = DDB_FeatTable(ddb_name, tb_name, tb_info['time_col'], tb_info['sec_col'])
 
                 for feat_nkname, feat_colname in tb_info['feat_cols'].items():
                     feat = Feature(ddb_table, feat_colname)
                     if (feat_nkname in self.feat_dict):
-                        raise ValueError(f"Feature name {feat_nkname} already exists")
+                        raise Warning(f"Feature name {feat_nkname} already exists")
                     self.feat_dict[feat_nkname] = feat
         return self.get_feat_names()
     
+    def set_dates_and_secs(self, feat_name):
+        if not self.feat_dict:
+            raise Warning("No features loaded")
+        self.dates = self.feat_dict[feat_name].get_dates()
+        self.secs = self.feat_dict[feat_name].get_secs()
+    
+    def get_dates(self):
+        return self.dates
+    
+    def get_secs(self):
+        return self.secs
+
     @functools.lru_cache(maxsize=20)
     def get_feature(self, feat_name):
         """
@@ -73,10 +81,11 @@ class Features:
             ValueError: If the feature name is not found.
         """
         if feat_name not in self.feat_dict:
-            raise ValueError(f"Feature name {feat_name} not found")
+            raise KeyError(f"Feature name {feat_name} not found")
         feat = self.feat_dict[feat_name]
         print(f"Loading [feature]{feat_name} from DolphinDB server")
-        return feat.read_data(self.start_time, self.end_time, self.sec_list)
+        feat.load_data(self.start_time, self.end_time, self.sec_list)
+        return feat
 
 
 
@@ -85,7 +94,14 @@ class Feature:
         self.ddb_tb = ddb_tb
         self.feat_colname = feat_colname
 
-    @functools.lru_cache(maxsize=None)
-    def read_data(self, start_time=None, end_time=None, sec_list=None):
-        data = self.ddb_tb.get_feature(self.feat_colname, start_time, end_time, sec_list)
-        return data[0]
+    def load_data(self, start_time=None, end_time=None, sec_list=None):
+        self.data = self.ddb_tb.get_feature(self.feat_colname, start_time, end_time, sec_list)
+        
+    def get_data(self):
+        return self.data[0]
+    
+    def get_dates(self):
+        return self.data[1]
+    
+    def get_secs(self):
+        return self.data[2]

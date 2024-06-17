@@ -4,7 +4,7 @@ from factor_cal.utils import ddb_utils as du
 # Obtain the session object from the singleton instance
 s = du.DDBSessionSingleton().get_session()
 
-class DDB_Table:
+class DDB_FeatTable:
     def __init__(self, ddb_name, tb_name, time_col, sec_col):
         self.ddb_name = ddb_name
         self.tb_name = tb_name

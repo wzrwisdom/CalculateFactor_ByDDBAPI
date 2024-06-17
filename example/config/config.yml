@@ -8,5 +8,8 @@ features:
         ddb_name: 'dfs://CROSS_SECTION_6sec'
         tb_features: !inc CROSS_SECTION_6sec.yml
 
+factors: 
+    facType_one: !inc factors.yml
 
-factors: !inc factors.yml
+factor_dbPath: 'dfs://FACTOR_TEST_DB'
+factor_tbName: 'freq_1s'

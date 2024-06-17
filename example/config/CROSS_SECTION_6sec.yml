@@ -6,6 +6,7 @@ trade_info:
         close: "close"
         high: "high"
         low: "low"
+        vol: "td_vol"
         # td_buy_n: "td_buy_num"
         # td_buy_v: "td_buy_vol"
 

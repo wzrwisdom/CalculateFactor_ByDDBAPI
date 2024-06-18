@@ -23,4 +23,4 @@ ddb_session = DDBSessionSingleton()
 ddb_session.connect("127.0.0.1", 11282, "wangzr", "wzr123456")
 
 # Obtain the session object from the singleton instance
-s = DDBSessionSingleton().get_session()
+s = ddb_session.get_session()

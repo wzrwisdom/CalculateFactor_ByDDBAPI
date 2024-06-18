@@ -18,6 +18,12 @@ class BasicTable:
     def _exist_tb(self):
         return s.existsTable(dbUrl=self.db_path, tableName=self.tb_name)
     
+    def _drop_db(self):
+        s.dropDatabase(self.db_path)
+    
+    def _drop_tb(self):
+        s.dropTable(dbPath=self.db_path, tableName=self.tb_name)
+    
     @abc.abstractmethod
     def _create_db(self):
         pass
@@ -26,12 +32,14 @@ class BasicTable:
     def _create_tb(self):
         pass
 
+    def get_db(self) -> ddb.database:
+        return s.database(dbPath=self.db_path)
+    
+    def get_tb(self) -> ddb.table:
+        return s.loadTable(dbPath=self.db_path, tableName=self.tb_name)
+    
     @abc.abstractmethod
-    def get_db(self):
-        pass
-
-    @abc.abstractmethod
-    def get_tb(self):
+    def save(self, data):
         pass
 
     def create(self, overwrite_db=False, overwrite_tb=False):
@@ -41,27 +49,20 @@ class BasicTable:
         if (not self._exist_tb()) or overwrite_tb:
             self._create_tb()
     
+    
 class FactorTable(BasicTable):
     def __init__(self, db_path, tb_name):
         super(FactorTable, self).__init__(db_path, tb_name)
 
-    @abc.abstractmethod
-    def save(self, data):
-        pass
+
 
 class SecLevelFacTable(FactorTable):
     def __init__(self, db_path, tb_name):
         super(FactorTable, self).__init__(db_path, tb_name)
 
-    def get_db(self):
-        return s.database(dbPath=self.db_path)
-    
-    def get_tb(self) -> ddb.table:
-        return s.loadTable(dbPath=self.db_path, tableName=self.tb_name)
-    
     def _create_db(self):
         if self._exist_db():
-            s.dropDatabase(self.db_path)
+            self._drop_db()
         datehours = np.array(pd.date_range(start='2023-04-01 00:00:00', end='2023-04-01 12:00:00', freq='H'), dtype="datetime64[h]")
         db1 = s.database(partitionType=keys.VALUE, partitions=datehours)
         db2 = s.database(partitionType=keys.VALUE, partitions=['f1', 'f2'])
@@ -71,7 +72,7 @@ class SecLevelFacTable(FactorTable):
         if not self._exist_db():
             raise Warning(f"Database {self.db_path} does not exist")
         if self._exist_tb():
-            s.dropTable(dbPath=self.db_path, tableName=self.tb_name)
+            self._drop_tb()
         
         s.run("schema_t = table(100:0, `tradetime`securityid`factorname`value, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE])")
         schema_t = s.table(data="schema_t")

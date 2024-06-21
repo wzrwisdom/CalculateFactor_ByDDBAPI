@@ -47,10 +47,14 @@ class OrderTable(HFDataTable):
             `securityid`seq_num`date`tradetime`price`volume`side`order_type, \
             [SYMBOL, LONG, DATE, TIMESTAMP, DOUBLE, INT, CHAR, CHAR])")
         schema_t = s.table(data="schema_t")
+        # pt = self.get_db().createPartitionedTable(schema_t, self.tb_name, 
+        #         partitionColumns=["date", "securityid"],
+        #         sortColumns=['securityid', 'tradetime'], compressMethods={"tradetime":"delta"},
+        #         keepDuplicates="ALL")
         pt = self.get_db().createPartitionedTable(schema_t, self.tb_name, 
                 partitionColumns=["date", "securityid"],
-                sortColumns=['securityid', 'tradetime'], compressMethods={"tradetime":"delta"},
-                keepDuplicates="ALL")
+                sortColumns=['securityid', 'seq_num', 'tradetime'], compressMethods={"tradetime":"delta"},
+                keepDuplicates="LAST", sortKeyMappingFunction=["","hashBucket{, 2}"])
         
 class TradeTable(HFDataTable):
     
@@ -71,10 +75,14 @@ class TradeTable(HFDataTable):
             `securityid`seq_num`date`tradetime`trade_price`trade_volume`side`sell_seq_num`buy_seq_num, \
             [SYMBOL, LONG, DATE, TIMESTAMP, DOUBLE, INT, CHAR, LONG, LONG])")
         schema_t = s.table(data="schema_t")
+        # pt = self.get_db().createPartitionedTable(schema_t, self.tb_name, 
+        #         partitionColumns=["date", "securityid"],
+        #         sortColumns=['securityid', 'tradetime'], compressMethods={"tradetime":"delta"},
+        #         keepDuplicates="ALL")
         pt = self.get_db().createPartitionedTable(schema_t, self.tb_name, 
                 partitionColumns=["date", "securityid"],
-                sortColumns=['securityid', 'tradetime'], compressMethods={"tradetime":"delta"},
-                keepDuplicates="ALL")
+                sortColumns=['securityid', 'seq_num', 'tradetime'], compressMethods={"tradetime":"delta"},
+                keepDuplicates="LAST", sortKeyMappingFunction=["","hashBucket{, 2}"])
         
 class SnapshotTable(HFDataTable):
     

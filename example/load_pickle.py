@@ -17,8 +17,8 @@ tradeTb.create()
 snapTb.create()
 
 base_path = "/data2/ddb_data"
-start_date = "2023.09.21"
-end_date = "2023.09.25"
+start_date = "2023.09.22"
+end_date = "2024.02.28"
 
 start_date = datetime.datetime.strptime(start_date, "%Y.%m.%d")
 end_date = datetime.datetime.strptime(end_date, "%Y.%m.%d")
@@ -32,7 +32,7 @@ while cur_date <= end_date:
     snap_filepath = os.path.join(base_path, 'ticker_' + cur_date_str + '.pkl')
     # print(order_filepath, '\n', trade_filepath, '\n', snap_filepath)
 
-    print("[Current date]: ", cur_date_str)
+    print("[Current date]: ", cur_date_str, flush=True)
     if os.path.exists(order_filepath):
         print("Loading order info")
         show_memory("  before load_order_info")
@@ -49,6 +49,8 @@ while cur_date <= end_date:
         load_snap_info(snapTb, snap_filepath)
     
     cur_date += datetime.timedelta(days=1)
+
+print('Finished!')
 
 
 

@@ -1,0 +1,66 @@
+[Current date]:  20230921
+[Current date]:  20230922
+Loading order info
+  before load_order_info 一共占用72.07MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 112316576
+Loading trade info
+  before load_trade_info 一共占用107.52MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 89512264
+Loading snap info
+  before load_snap_info 一共占用84.43MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20533871
+[Current date]:  20230923
+[Current date]:  20230924
+[Current date]:  20230925
+[Current date]:  20230926
+[Current date]:  20230927
+[Current date]:  20230928
+[Current date]:  20230929
+[Current date]:  20230930
+Finished!

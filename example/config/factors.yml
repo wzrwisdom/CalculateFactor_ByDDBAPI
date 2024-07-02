@@ -11,3 +11,6 @@ pv_corr:
     - "close"
     - "vol"
   kwargs: {}
+
+close_ret_5min:
+  "ret(close, shift=5*60)"

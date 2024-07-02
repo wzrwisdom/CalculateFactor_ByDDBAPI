@@ -19,7 +19,7 @@ class Factors:
     def load_factors(self):
         for cat_name, cat_facs in self.factors_info.items():
             # get all factors' names in each category
-            self.fac_category[cat_name] = self.fac_category.get(cat_name, [])
+            self.fac_category[cat_name] = list(cat_facs.keys())
             self._load_oneCategory_factors(cat_name, cat_facs)
 
     def replace_args_by_featName(self, args):

@@ -17,8 +17,8 @@ tradeTb.create()
 snapTb.create()
 
 base_path = "/data2/ddb_data"
-start_date = "2023.09.22"
-end_date = "2024.02.28"
+start_date = "2023.09.21"
+end_date = "2023.09.30"
 
 start_date = datetime.datetime.strptime(start_date, "%Y.%m.%d")
 end_date = datetime.datetime.strptime(end_date, "%Y.%m.%d")

@@ -21,7 +21,8 @@ class DDBSessionSingleton:
 
 # Create an instance of DDBSessionSingleton
 ddb_session = DDBSessionSingleton(compress=True, protocol=keys.PROTOCOL_DDB)
-ddb_session.connect("127.0.0.1", 8902, "admin", "123456")
+ddb_session.connect("127.0.0.1", 50526, "admin", "123456")
+# ddb_session.connect("127.0.0.1", 11282, "admin", "123456")
 
 # Obtain the session object from the singleton instance
 s = ddb_session.get_session()

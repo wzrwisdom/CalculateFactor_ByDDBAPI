@@ -65,6 +65,24 @@ class Features:
     
     def get_secs(self):
         return self.secs
+    
+    def get_data_by_featList(self, feat_list):
+        """
+        Retrieves data for a list of features.
+
+        Args:
+            feat_list (list): A list of feature names.
+
+        Returns:
+            List: A list of feature in the given order.
+        """
+        ret = []
+        for feat_name in feat_list:
+            if (feat_name in self.get_feat_names()):
+                ret.append(self.get_feature(feat_name).get_data())
+            else:
+                raise KeyError(f"Feature name {feat_name} not found") 
+        return ret
 
     @functools.lru_cache(maxsize=20)
     def get_feature(self, feat_name):

@@ -1,4 +1,4 @@
-from .basic_factor import BasicFactor
+from .basic_factor import BasicFactor, create_factor_by_str
 from factor_cal.table.ddb_table import SecLevelFacTable
 
 
@@ -19,26 +19,21 @@ class Factors:
     def load_factors(self):
         for cat_name, cat_facs in self.factors_info.items():
             # get all factors' names in each category
-            self.fac_category[cat_name] = self.fac_category.get(cat_name, [])
+            self.fac_category[cat_name] = []
             self._load_oneCategory_factors(cat_name, cat_facs)
-
-    def replace_args_by_featName(self, args):
-        ret = []
-        for arg in args:
-            if (arg in self.features.get_feat_names()):
-                ret.append(self.features.get_feature(arg).get_data())
-            else:
-                raise KeyError(f"[Feature]{arg} not found in features")
-        return ret
+            self.fac_category[cat_name] = list(cat_facs.keys())
 
     def _load_oneCategory_factors(self, cat_name, cat_facs):
         for fac_name, fac_info in cat_facs.items():
             if (fac_name in self.fac_category[cat_name]):
                 raise Warning(f"[Factor]{fac_name} already exists in [Fac Catetory]{cat_name}")
             
-            fac = BasicFactor(fac_name, fac_info['func_name'], fac_info['args'])
-            args = self.replace_args_by_featName(fac_info['args'])
-            fac.set_args(*args, **fac_info['kwargs'])
+            if isinstance(fac_info, dict):
+                fac = BasicFactor(fac_name, fac_info['func_name'], fac_info['args'])
+                args = self.features.get_data_by_featList(fac_info['args'])
+                fac.set_args(*args, **fac_info['kwargs'])
+            elif isinstance(fac_info, str):
+                fac = create_factor_by_str(fac_name, fac_info, self.features)
 
             self.fac_category[cat_name].append(fac_name)
             self.fac_dict[fac_name] = fac
@@ -46,7 +41,7 @@ class Factors:
     def process(self):
         for fac_name, fac in self.fac_dict.items():
             fac.calculate()
-            self.features.set_dates_and_secs(fac.fac_args[0])
+            self.features.set_dates_and_secs(fac.arg_names[0])
             fac.set_dates_and_secs(self.features.get_dates(), self.features.get_secs())
             fac.save(self.factor_table)
 

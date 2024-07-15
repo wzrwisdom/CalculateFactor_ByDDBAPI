@@ -29,4 +29,19 @@ class BasicConfig:
 
     def __str__(self):
         return str(self.config)
+    
+
+class CalculateConfig(BasicConfig):
+    def __init__(self, filepath):
+        super().__init__(filepath)
+        self.modify_config()
+    
+    def modify_config(self):
+        sec_list = self.config['sec_list']
+        if isinstance(sec_list, list):
+            sec_list = tuple(sec_list)
+        elif isinstance(sec_list, str):
+            if sec_list.lower() == 'all':
+                sec_list = None
+        self.config['sec_list'] = sec_list
 

@@ -1,6 +1,7 @@
 import warnings
 import pandas as pd
 import numpy as np
+import re
 
 from factor_cal.utils.tools import get_func_info
 from factor_cal.config import regist_config, get_config
@@ -34,37 +35,68 @@ def register_facFunc(name=None, f=None):
 
 
 class BasicFactor:
-    def __init__(self, name, func_name, arg_names):
+    def __init__(self, name, func_name, args_info, kwargs_info):
         self.name = name
         self.func = get_config(FACTOR_FUNC)[func_name] # according to the name to get the function
-        func_info = get_func_info(self.func)
-        self.arg_names = arg_names
-        self.args_info = func_info['args']
-        self.kwargs_info = func_info['kwargs']
-        self.return_type = func_info['return_type']
+        func_type = get_func_info(self.func)
+        self.args_info = args_info
+        self.kwargs_info = kwargs_info
+        self.args_type = func_type['args']
+        self.kwargs_type = func_type['kwargs']
+        self.return_type = func_type['return_type']
         self.data = None  # nmpy array
         self.output_data = None  # pandas dataframe
     
-    def prepare_args(self, args, features):
+    def prepare_args(self, args, features, date):
         ret = []
+        parsed_args = []
         for arg in args:
-            if isinstance(arg, BasicFactor):
-                arg.calculate()
-                arg = arg.get_data()
-            elif isinstance(arg, str):
-                arg = features.get_feature(arg).get_data()
-            ret.append(arg)
+            try: 
+                if isinstance(arg, BasicFactor):
+                    arg.calculate(features, date)
+                    arg.set_dates_and_secs_v2(features)
+                    parsed_args.append(arg)
+                elif isinstance(arg, str):
+                    parsed_args.append(features.get_feature(arg, date))
+            except TypeError:
+                raise ValueError(f"Feature {arg} is not available ")
+        
+        common_secs, common_dates = None, None
+        try:
+            for arg in parsed_args:
+                if common_dates is None:
+                    common_dates = arg.get_dates()
+                else:
+                    common_dates = np.intersect1d(common_dates, arg.get_dates())
+                if common_secs is None:
+                    common_secs = arg.get_secs()
+                else:
+                    common_secs = np.intersect1d(common_secs, arg.get_secs())
+        except TypeError:
+                raise ValueError(f"Feature {arg} is not available ")  
+
+        for arg in parsed_args:
+            cur_dates = arg.get_dates()
+            cur_secs = arg.get_secs()
+            common_dates_indices = [np.where(cur_dates == date)[0][0] for date in common_dates]
+            common_secs_indices = [np.where(cur_secs == sec)[0][0] for sec in common_secs]
+            arg.set_dates_and_secs(common_dates, common_secs)
+            arg.set_data(arg.get_data()[common_dates_indices][:, common_secs_indices])
+            ret.append(arg.get_data())
+            
         self.args = ret
+            
         
     def prepare_kwargs(self, kwargs):
         ret = {}
-        for i in self.kwargs_info:
+        for i in self.kwargs_type:
             kwarg_name = i[0]
             kwarg_type = i[1]
-            if (kwarg_type == str) and (kwarg_name in kwargs):
-                ret[kwarg_name] = kwargs.get(kwarg_name, "")
-            elif kwarg_name in kwargs:
-                ret[kwarg_name] = eval(kwargs[kwarg_name])
+            kwarg_default = i[2]
+            if (kwarg_type != str) and (kwarg_name in kwargs) and isinstance(kwargs[kwarg_name], str):
+                ret[kwarg_name] = kwarg_type(eval(kwargs[kwarg_name]))
+            else:
+                ret[kwarg_name] = kwargs.get(kwarg_name, kwarg_default)
         self.kwargs = ret
         
     def set_args(self, *args, **kwargs):
@@ -74,8 +106,23 @@ class BasicFactor:
     def set_dates_and_secs(self, dates, secs):
         self.dates = dates
         self.secs = secs
+        
+    def set_dates_and_secs_v2(self, features):
+        if isinstance(self.args_info[0], BasicFactor):
+            features.set_dates_and_secs(self.args_info[0].get_dates(), self.args_info[0].get_secs())
+        else:
+            features.set_dates_and_secs_by_feat(self.args_info[0])
+        self.set_dates_and_secs(features.get_dates(), features.get_secs())
 
-    def calculate(self):
+    def get_dates(self):
+        return self.dates
+    
+    def get_secs(self):
+        return self.secs
+
+    def calculate(self, features, date):
+        self.prepare_args(self.args_info, features, date)
+        self.prepare_kwargs(self.kwargs_info)
         self.data = self.func(*self.args, **self.kwargs)   
     
     def prepare_data(self):
@@ -99,36 +146,49 @@ class BasicFactor:
     
     def get_data(self):
         return self.data
+    
+    def set_data(self, data):
+        self.data = data
         
 
-def create_factor_by_str(fac_name, fac_str, features):
+def create_factor_by_str(fac_name, fac_str):
     # fac_str="ret(close, corr(close, volume), shift=50)"
-    def parse_fac_str(fac_name, fac_str) -> BasicFactor:
-
-        # Split the fac_str into function name and arguments
-        func_name, args_str = fac_str.split("(", 1)
-        args_str = args_str.rstrip(")")
-        
-        # Split the arguments string into individual arguments
-        args = args_str.split(",")
-        
-        # Recursively parse each argument
+    
+    def parse_args(s):
+        args = []
+        balance = 0
+        current_arg = []
+        for char in s:
+            if char == ',' and balance == 0:
+                args.append(''.join(current_arg).strip())
+                current_arg = []
+            else:
+                if char == '(':
+                    balance += 1
+                elif char == ')':
+                    balance -= 1
+                current_arg.append(char)
+        if current_arg:
+            args.append(''.join(current_arg).strip())
+        return args
+    
+    match = re.match(r'(\w+)\((.*)\)', fac_str)
+    if match:
+        func_name = match.group(1)
+        args_str = match.group(2)
+        args = parse_args(args_str)
+        args = [create_factor_by_str("", arg) for arg in args]
         parsed_args = []
         parsed_kwargs = {}
         for arg in args:
-            arg = arg.strip()
-            if "(" in arg:
-                parsed_arg = parse_fac_str("", arg)
-            elif "=" in arg:
-                parsed_kwargs[arg.split("=")[0].strip()] = arg.split("=")[1].strip()
-            else:
-                # Handle other arguments
-                parsed_arg = arg
-                parsed_args.append(parsed_arg)
-
-        # Get the function from the config
-        fac = BasicFactor(fac_name, func_name, arg_names=parsed_args)
-        fac.prepare_args(parsed_args, features)
-        fac.prepare_kwargs(parsed_kwargs)
-        return fac
-    return parse_fac_str(fac_name, fac_str)
+            if isinstance(arg, BasicFactor):
+                parsed_args.append(arg)
+            elif isinstance(arg, str):
+                arg = arg.strip()
+                if "=" in arg:
+                    parsed_kwargs[arg.split("=")[0].strip()] = arg.split("=")[1].strip()
+                else:
+                    parsed_args.append(arg)
+        return BasicFactor(fac_name, func_name, parsed_args, parsed_kwargs)
+    else:
+        return fac_str

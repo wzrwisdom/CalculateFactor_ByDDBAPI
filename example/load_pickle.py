@@ -18,7 +18,9 @@ snapTb.create()
 
 base_path = "/data2/ddb_data"
 start_date = "2023.09.21"
-end_date = "2023.09.30"
+end_date = "2024.02.29"
+# start_date = "2024.02.01"
+# end_date = "2024.02.29"
 
 start_date = datetime.datetime.strptime(start_date, "%Y.%m.%d")
 end_date = datetime.datetime.strptime(end_date, "%Y.%m.%d")
@@ -33,15 +35,15 @@ while cur_date <= end_date:
     # print(order_filepath, '\n', trade_filepath, '\n', snap_filepath)
 
     print("[Current date]: ", cur_date_str, flush=True)
-    if os.path.exists(order_filepath):
-        print("Loading order info")
-        show_memory("  before load_order_info")
-        load_order_info(orderTb, order_filepath)
+    # if os.path.exists(order_filepath):
+    #     print("Loading order info")
+    #     show_memory("  before load_order_info")
+    #     load_order_info(orderTb, order_filepath)
     
-    if os.path.exists(trade_filepath):
-        print("Loading trade info")
-        show_memory("  before load_trade_info")
-        load_trade_info(tradeTb, trade_filepath)
+    # if os.path.exists(trade_filepath):
+    #     print("Loading trade info")
+    #     show_memory("  before load_trade_info")
+    #     load_trade_info(tradeTb, trade_filepath)
     
     if os.path.exists(snap_filepath):
         print("Loading snap info")

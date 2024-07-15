@@ -10,7 +10,7 @@ from factor_cal.utils import tools as tl
 from factor_cal.factor import factor_func as ff
 
 # read config file
-config = cfg.BasicConfig('config/config.yml')
+config = cfg.CalculateConfig('config/config.yml')
 # obtain the ddb session
 s = du.DDBSessionSingleton().session
 
@@ -18,3 +18,5 @@ features = fe.Features(config)
 factors = fa.Factors(config, features)
 
 factors.process()
+
+s.close()

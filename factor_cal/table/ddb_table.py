@@ -84,5 +84,52 @@ class SecLevelFacTable(FactorTable):
     def save(self, data:pd.DataFrame):
         tb = s.table(data=data)
         self.get_tb().append(tb)
-
         
+    def load_factor(self, fac_name, date, start_time, end_time, sec_list=None):
+        table = self.get_tb()
+        cols = ["tradetime", "securityid", "factorname", "value"]
+        sql = table.select(cols)
+        sql = sql.where(f"factorname = '{fac_name}'")
+        if start_time is not None:
+            condition = f"timestamp(tradetime) >= timestamp({date} {start_time})"
+            sql = sql.where(condition)
+        if end_time is not None:
+            condition = f"timestamp(tradetime) <= timestamp({date} {end_time})"
+            sql = sql.where(condition)
+        if sec_list is not None:
+            condition = f"securityid in {sec_list}"
+            sql = sql.where(condition)
+        
+        sql_line = sql.sort(["securityid", "tradetime"], ascending=True).showSQL()
+        table_name = f"t_{self.tb_name}"
+        sql_line = table_name + ' = ' + sql_line
+        s.run(sql_line)
+        return table_name
+
+class PriceTable(BasicTable):
+    def __init__(self, db_path, tb_name, time_col, sec_col, price_cols):
+        super().__init__(db_path, tb_name)
+        self.time_col = time_col
+        self.sec_col = sec_col
+        self.other_cols = price_cols
+    
+    def load_price(self, date, start_time, end_time, sec_list=None):
+        table = self.get_tb()   
+        cols = [self.time_col, self.sec_col] + self.other_cols
+        
+        sql = table.select(cols)
+        if start_time is not None:
+            condition = f"timestamp({self.time_col}) >= timestamp({date} {start_time})"
+            sql = sql.where(condition)
+        if end_time is not None:
+            condition = f"timestamp({self.time_col}) <= timestamp({date} {end_time})"
+            sql = sql.where(condition)
+        if sec_list is not None:
+            condition = f"{self.sec_col} in {sec_list}"
+        
+        sql_line = sql.sort([self.sec_col, self.time_col], ascending=True).showSQL()
+        table_name = f"t_{self.tb_name}"
+        sql_line = table_name + ' = ' + sql_line
+        s.run(sql_line)
+        return table_name
+    

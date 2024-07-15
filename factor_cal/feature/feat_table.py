@@ -5,27 +5,27 @@ from factor_cal.utils import ddb_utils as du
 s = du.DDBSessionSingleton().get_session()
 
 class DDB_FeatTable:
-    def __init__(self, ddb_name, tb_name, time_col, sec_col):
+    def __init__(self, ddb_name, tb_name, time_col, sec_col, other_cols):
         self.ddb_name = ddb_name
         self.tb_name = tb_name
         self.time_col = time_col
         self.sec_col = sec_col
+        self.other_cols = other_cols
     
     @functools.lru_cache(maxsize=2)
-    def get_table(self, start_time=None, end_time=None, sec_list=None):
-        self.start_time = start_time
-        self.end_time = end_time
-        self.sec_list = sec_list
-
+    def get_table(self, date, start_time=None, end_time=None, sec_list=None):
         table = s.loadTable(dbPath=self.ddb_name, tableName=self.tb_name)
         
         # filter the table by start_time, end_time, and sec_list
-        sql = table.select("*")
+        
+        cols = [self.time_col, self.sec_col] + self.other_cols
+        
+        sql = table.select(cols)
         if start_time is not None:
-            condition = f"timestamp({self.time_col}) >= timestamp({start_time})"
+            condition = f"timestamp({self.time_col}) >= timestamp({date} {start_time})"
             sql = sql.where(condition)
         if end_time is not None:
-            condition = f"timestamp({self.time_col}) <= timestamp({end_time})"
+            condition = f"timestamp({self.time_col}) <= timestamp({date} {end_time})"
             sql = sql.where(condition)
         if sec_list is not None:
             condition = f"{self.sec_col} in {sec_list}"
@@ -40,8 +40,10 @@ class DDB_FeatTable:
         s.run(sql_line)
         return table_name
     
-    def get_feature(self, feat_colname, start_time=None, end_time=None, sec_list=None):
-        cur_table_name = self.get_table(start_time, end_time, sec_list)
+    def get_feature(self, feat_colname, date, start_time=None, end_time=None, sec_list=None):
+        cur_table_name = self.get_table(date, start_time, end_time, sec_list)
         cur_tb = s.loadTable(tableName=cur_table_name)
+        if cur_tb.rows == 0:
+            return None
         data = cur_tb.exec(feat_colname).pivotby(self.time_col, self.sec_col).toDF()
         return data

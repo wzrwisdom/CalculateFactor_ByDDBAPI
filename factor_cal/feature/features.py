@@ -20,7 +20,7 @@ class Features:
         self.config = config
         self.start_time = config['start_time']
         self.end_time = config['end_time']
-        self.sec_list = tuple(config['sec_list'])
+        self.sec_list = config['sec_list']
         self.feat_dict = {}
         self.load_features()
     
@@ -45,7 +45,8 @@ class Features:
             tbs = ddb_info['tb_features']
             for tb_name, tb_info in tbs.items():
                 # Create a DDB_Table object for each table
-                ddb_table = DDB_FeatTable(ddb_name, tb_name, tb_info['time_col'], tb_info['sec_col'])
+                other_cols = list(tb_info['feat_cols'].values())
+                ddb_table = DDB_FeatTable(ddb_name, tb_name, tb_info['time_col'], tb_info['sec_col'], other_cols)
 
                 for feat_nkname, feat_colname in tb_info['feat_cols'].items():
                     feat = Feature(ddb_table, feat_colname)
@@ -54,11 +55,16 @@ class Features:
                     self.feat_dict[feat_nkname] = feat
         return self.get_feat_names()
     
-    def set_dates_and_secs(self, feat_name):
+    def set_dates_and_secs_by_feat(self, feat_name):
         if not self.feat_dict:
             raise Warning("No features loaded")
         self.dates = self.feat_dict[feat_name].get_dates()
         self.secs = self.feat_dict[feat_name].get_secs()
+    
+    
+    def set_dates_and_secs(self, dates, secs):
+        self.dates = dates
+        self.secs = secs
     
     def get_dates(self):
         return self.dates
@@ -66,7 +72,7 @@ class Features:
     def get_secs(self):
         return self.secs
     
-    def get_data_by_featList(self, feat_list):
+    def get_data_by_featList(self, feat_list, date):
         """
         Retrieves data for a list of features.
 
@@ -79,13 +85,13 @@ class Features:
         ret = []
         for feat_name in feat_list:
             if (feat_name in self.get_feat_names()):
-                ret.append(self.get_feature(feat_name).get_data())
+                ret.append(self.get_feature(feat_name, date).get_data())
             else:
                 raise KeyError(f"Feature name {feat_name} not found") 
         return ret
 
     @functools.lru_cache(maxsize=20)
-    def get_feature(self, feat_name):
+    def get_feature(self, feat_name, date):
         """
         Retrieves a feature by its name.
 
@@ -102,7 +108,7 @@ class Features:
             raise KeyError(f"Feature name {feat_name} not found")
         feat = self.feat_dict[feat_name]
         print(f"Loading [feature]{feat_name} from DolphinDB server")
-        feat.load_data(self.start_time, self.end_time, self.sec_list)
+        feat.load_data(date, self.start_time, self.end_time, self.sec_list)
         return feat
 
 
@@ -112,9 +118,16 @@ class Feature:
         self.ddb_tb = ddb_tb
         self.feat_colname = feat_colname
 
-    def load_data(self, start_time=None, end_time=None, sec_list=None):
-        self.data = self.ddb_tb.get_feature(self.feat_colname, start_time, end_time, sec_list)
-        
+    def load_data(self, date, start_time=None, end_time=None, sec_list=None):
+        self.data = self.ddb_tb.get_feature(self.feat_colname, date, start_time, end_time, sec_list)
+
+    def set_data(self, data):
+        self.data[0] = data
+    
+    def set_dates_and_secs(self, dates, secs):
+        self.data[1] = dates
+        self.data[2] = secs
+    
     def get_data(self):
         return self.data[0]
     

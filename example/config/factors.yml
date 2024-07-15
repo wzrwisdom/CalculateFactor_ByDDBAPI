@@ -6,11 +6,203 @@ close_ret:
     shift: 1
 
 pv_corr:
-  func_name: "roll_spear_corr"
+  func_name: "ts_corr"
   args:
     - "close"
     - "vol"
   kwargs: {}
 
+td_pv_corr_5min:
+  "ts_corr(ffill_na(vwap), vol, window=5*20)"
+
+td_pv_corr_1min:
+  "ts_corr(ffill_na(vwap), vol, window=20)"
+
+td_pv_corr:
+  "ts_corr(ffill_na(vwap), vol)"
+
+ret_v_prod_5min:
+  "ts_rank(mul(ret(close), vol), window=5*20)"
+
+ret_v_prod_1min:
+  "ts_rank(mul(ret(close), vol), window=5*20)"
+
+td_ret_v_prod_5min:
+  "ts_rank(mul(ret(ffill_na(vwap)), vol), window=5*20)"
+
+td_ret_v_prod_1min:
+  "ts_rank(mul(ret(ffill_na(vwap)), vol), window=20)"
+
+td_p_v_ratio_3s_1min:
+  "ts_rank(fill_na(div(delta(ffill_na(vwap), shift=1), ts_sum(vol, window=1))), window=1*20)"
+
+td_p_v_ratio_3s_5min:
+  "ts_rank(fill_na(div(delta(ffill_na(vwap), shift=1), ts_sum(vol, window=1))), window=5*20)"
+
+close_ret_15min:
+  "ret(close, shift=15*20)"
+
 close_ret_5min:
-  "ret(close, shift=5*60)"
+  "ret(close, shift=5*20)"
+
+close_ret_1min:
+  "ret(close, shift=20)"
+
+ohlc_rat:
+  func_name: "ohlc_rat"
+  args:
+    - "open"
+    - "high"
+    - "low"
+    - "close"
+  kwargs: {window=3*20}
+
+clh:
+  "div(sub(add(close, close), add(low, high)), avoid_zero(sub(high, low)) )"
+
+clh_delta:
+  "delta( div( sub(add(close, close), add(low, high)), avoid_zero(sub(high, low)) ) )"
+
+
+
+td_buy_rank:
+  "ts_rank(fill_na(mul(td_buy_p, td_buy_v), fill_num=0.), window=5*20)"
+
+td_sell_rank:
+  "ts_rank(fill_na(mul(td_sell_p, td_sell_v), fill_num=0.), window=5*20)"
+
+close_adjusted:
+  "fill_na( div(sub(close, ts_mean(close, window=5*20)), ts_std(close, window=5*20)) )"
+
+ret_skew:
+  "ts_skew(ret(close, shift=20), window=5*20)"
+
+ret_kurt:
+  "ts_kurt(ret(close, shift=20), window=5*20)"
+
+
+retail_dir_tsrank_10min:
+  "ts_rank( fill_na( div( sub(add(mid_ab_m, sm_ab_m), add(mid_as_m, sm_as_m)), add(add(mid_ab_m, sm_ab_m), add(mid_as_m, sm_as_m)) ), window=10*20 ))"
+
+
+retail_dir_rowrank:
+  "rowrank( fill_na( div( sub(add(mid_ab_m, sm_ab_m), add(mid_as_m, sm_as_m)), add(add(mid_ab_m, sm_ab_m), add(mid_as_m, sm_as_m)) ) ) )"
+
+
+OB_price_2derivative:
+  "div(sub(add(bs_avg_price, move(bs_avg_price, shift=2)) , add(move(bs_avg_price, shift=1), move(bs_avg_price, shift=1))), bs_avg_price)"
+
+OB_price_2derivative_tsrank:
+  "ts_rank(sub(add(bs_avg_price, move(bs_avg_price, shift=2)) , add(move(bs_avg_price, shift=1), move(bs_avg_price, shift=1))), window=5*20)"
+
+wb1_tsrank:
+  "ts_rank(wb1, window=5*20)"
+
+wb5_tsrank:
+  "ts_rank(wb5, window=5*20)"
+
+wb10_tsrank:
+  "ts_rank(wb10, window=5*20)"
+
+td_v_ratio:
+  "ts_rank(fill_na(div(sub(td_buy_v, td_sell_v), add(td_buy_v, td_sell_v))), window=5*20)"
+
+en_b_p10_tsrank:
+  "ts_rank(div(bbv10_sum, bv10_sum), window=5*20)"
+
+en_s_p10_tsrank:
+  "ts_rank(div(ssv10_sum, sv10_sum), window=5*20)"
+
+en_b_ret10_tsrank:
+  "ts_rank(ret(div(bbv10_sum, bv10_sum)), window=5*20)"
+
+en_s_ret10_tsrank:
+  "ts_rank(ret(div(ssv10_sum, sv10_sum)), window=5*20)"
+
+
+en_b_p5_tsrank:
+  "ts_rank(div(bbv5_sum, bv5_sum), window=5*20)"
+
+en_s_p5_tsrank:
+  "ts_rank(div(ssv5_sum, sv5_sum), window=5*20)"
+
+en_b_ret5_tsrank:
+  "ts_rank(ret(div(bbv5_sum, bv5_sum)), window=5*20)"
+
+en_s_ret5_tsrank:
+  "ts_rank(ret(div(ssv5_sum, sv5_sum)), window=5*20)"
+
+
+
+bs_v1_tsrank:
+  "ts_rank(sub(bv1_sum, sv1_sum), window=5*20)"
+
+bs_v5_tsrank:
+  "ts_rank(sub(bv5_sum, sv5_sum), window=5*20)"
+
+bs_pv1_tsrank:
+  "ts_rank(sub(bbv1_sum, ssv1_sum), window=5*20)"
+
+bs_pv5_tsrank:
+  "ts_rank(sub(bbv5_sum, ssv5_sum), window=5*20)"
+
+en_bs_price_diff:
+  "div(sub(fill_na_v2(en_buy_p, b1), fill_na_v2(en_sell_p, s1) ), bs_avg_price )"
+
+en_bs_price_diff_inv:
+  "mul(fill_na(inv(sub(fill_na_v2(en_buy_p, b1), fill_na_v2(en_sell_p, s1) ))), bs_avg_price)"
+
+en_b_price_tsrank:
+  "ts_rank(sub(fill_na_v2(en_buy_p, b1), bs_avg_price), window=5*20)"
+
+en_s_price_tsrank:
+  "ts_rank(sub(fill_na_v2(en_sell_p, s1), bs_avg_price), window=5*20)"
+
+en_b_sumprice_tsrank:
+  "ts_rank( sub(div(ts_sum(mul(en_buy_p, en_buy_v), window=10), ts_sum(en_buy_v, window=10)), bs_avg_price), window=5*20)"
+
+en_s_sumprice_tsrank:
+  "ts_rank( sub(div(ts_sum(mul(en_sell_p, en_sell_v), window=10), ts_sum(en_sell_v, window=10)), bs_avg_price), window=5*20)"
+
+
+ct_b_med_tsrank:
+  "ts_rank(fill_na(inv(ct_b_med)), window=5*20)"
+
+ct_s_med_tsrank:
+  "ts_rank(fill_na(inv(ct_s_med)), window=5*20)"
+
+can_en_v_ratio:
+  "ts_rank(div(sub(add(en_buy_v, cancel_sell_v), add(en_sell_v, cancel_buy_v)), add(add(en_buy_v, cancel_sell_v), add(en_sell_v, cancel_buy_v))), window=5*20)"
+
+can_en_v_ratio_fillna:
+  "ts_rank(fill_na(div(sub(add(en_buy_v, cancel_sell_v), add(en_sell_v, cancel_buy_v)), add(add(en_buy_v, cancel_sell_v), add(en_sell_v, cancel_buy_v)))), window=5*20)"
+
+can_en_pv_ratio:
+  "ts_rank(div(sub(add(mul(en_buy_v, fill_na(en_buy_p)), cancel_sell_m), add(mul(en_sell_v, fill_na(en_sell_p)), cancel_buy_m)), add(add(mul(en_buy_v, fill_na(en_buy_p)), cancel_sell_m), add(mul(en_sell_v, fill_na(en_sell_p)), cancel_buy_m))), window=5*20)"
+
+can_en_pv_ratio_fillna:
+  "ts_rank(fill_na(div(sub(add(mul(en_buy_v, fill_na(en_buy_p)), cancel_sell_m), add(mul(en_sell_v, fill_na(en_sell_p)), cancel_buy_m)), add(add(mul(en_buy_v, fill_na(en_buy_p)), cancel_sell_m), add(mul(en_sell_v, fill_na(en_sell_p)), cancel_buy_m)))), window=5*20)"
+
+
+
+best_v_imbalance_tsrank:
+  "ts_rank(best_v_imbalance(bv1_sum, b1, sv1_sum, s1, shift=1), window=3*20)"
+
+bs_press:
+  "bs_press(press_buy_v, press_sell_v)"
+
+OB_price_spread_tsrank:
+  "ts_rank(sub(s1,b1), window=20)"
+
+td_price_std:
+  "ts_rank(ts_std(ffill_na(vwap), window=20), window=3*20)"
+
+en_b_price_std:
+  "ts_rank(ts_std(en_buy_p, window=20), window=3*20)"
+
+en_s_price_std:
+  "ts_rank(ts_std(en_sell_p, window=20), window=3*20)"
+
+en_v_order_inbalance:
+  "fill_na(div(sub(en_buy_v, en_sell_v), add(en_buy_v, en_sell_v)))"
+

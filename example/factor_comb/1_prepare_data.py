@@ -15,24 +15,24 @@ config = cfg.BasicConfig('config/config.yml')
 # obtain the ddb session
 s = du.DDBSessionSingleton().session
 
-# factor_names = []
-# for facType in config['factors']:
-#     factor_names += list(config['factors'][facType].keys())
-    
+factor_names = []
+for facType in config['factors']:
+    factor_names += list(config['factors'][facType].keys())
+excluded_factors = ['close_ret']
+factor_names = [x for x in factor_names if x not in excluded_factors]
 
-# excluded_factors = ['close_ret']
-# factor_names = [x for x in factor_names if x not in excluded_factors]
-pred_type='1m'
-base_dir = r'C:\Users\12552\Downloads\ic_summary\factor_ic_summary'
-factor_filepath = os.path.join(base_dir, f'satisfied_factors_{pred_type}.yml')
-with open(factor_filepath, 'r') as f:
-    factor_names = yaml.load(f, Loader=yaml.FullLoader)
+# pred_type='1m'
+# base_dir = r'/home/wangzirui/workspace/factor_ic_summary'
+# factor_filepath = os.path.join(base_dir, f'satisfied_factors_{pred_type}.yml')
+# with open(factor_filepath, 'r') as f:
+#     factor_names = yaml.load(f, Loader=yaml.FullLoader)
 
 ## For testing purpose, only use the first two factors
 # factor_names = factor_names[:2]
 
-start_date = '2023.09.21'
-end_date = '2024.02.20'
+# start_date = '2023.09.21'
+start_date = '2024.02.19'
+end_date = '2024.02.19'
 start_time = '09:45:00'
 end_time = '14:45:00'
 dates = pd.date_range(start_date, end_date)
@@ -57,6 +57,7 @@ for date in dates:
     ret_df = None
     facs_df = None
     for fac_name in factor_names:
+        print("\tprocessing factor: ", fac_name, "...")
         fac_tb = SecLevelFacTable(config['factor_dbPath'], config['factor_tbName'])
         fac = fac_tb.load_factor(fac_name, date, start_time, end_time, sec_list=None)
         fac_df = s.loadTable(tableName=fac).toDF()
@@ -76,5 +77,6 @@ for date in dates:
             ret_df = ret_df[~(ret_df.isna().sum(axis=1) == 3)]
         
     df = ret_df.merge(facs_df, on=['tradetime', 'securityid'], how='left')
-    base_dir = r'C:\Users\12552\Downloads\ic_summary\data'
-    df.to_pickle(rf'{base_dir}\fac_ret_{date}.pkl')
+    # base_dir = r'/data2/prepared_data'
+    base_dir = r'/home/wangzirui/workspace/data'
+    df.to_pickle(rf'{base_dir}/fac_ret_{date}.pkl')

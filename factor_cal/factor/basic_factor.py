@@ -35,8 +35,9 @@ def register_facFunc(name=None, f=None):
 
 
 class BasicFactor:
-    def __init__(self, name, func_name, args_info, kwargs_info):
+    def __init__(self, name, func_name, args_info, kwargs_info, desc=None):
         self.name = name
+        self._desc = desc
         self.func = get_config(FACTOR_FUNC)[func_name] # according to the name to get the function
         func_type = get_func_info(self.func)
         self.args_info = args_info
@@ -46,6 +47,30 @@ class BasicFactor:
         self.return_type = func_type['return_type']
         self.data = None  # nmpy array
         self.output_data = None  # pandas dataframe
+    
+    @property
+    def desc(self):
+        return self._desc
+    
+    @desc.setter
+    def desc(self, desc):
+        self._desc = desc
+        
+    def __str__(self):
+        args_str = []
+        kwargs_str = []
+        for i in self.args_info:
+            if isinstance(i, BasicFactor):
+                args_str.append(str(i))
+            else:
+                args_str.append(i)
+        for k, v in self.kwargs_info.items():
+            kwargs_str.append(f"{k}={v}")
+        if len(kwargs_str) > 0:
+            return self.func.__name__ + "(" + ", ".join(args_str) + ", " + ", ".join(kwargs_str) + ")"
+        else:
+            return self.func.__name__ + "(" + ", ".join(args_str) + ")"
+        
     
     def prepare_args(self, args, features, date):
         ret = []
@@ -151,9 +176,12 @@ class BasicFactor:
         self.data = data
         
 
-def create_factor_by_str(fac_name, fac_str):
+def create_factor_by_str(fac_name, fac_info):
     # fac_str="ret(close, corr(close, volume), shift=50)"
-    
+    if isinstance(fac_info, dict):
+        fac_str = fac_info['formula']
+    else:
+        fac_str = fac_info
     def parse_args(s):
         args = []
         balance = 0
@@ -189,6 +217,6 @@ def create_factor_by_str(fac_name, fac_str):
                     parsed_kwargs[arg.split("=")[0].strip()] = arg.split("=")[1].strip()
                 else:
                     parsed_args.append(arg)
-        return BasicFactor(fac_name, func_name, parsed_args, parsed_kwargs)
+        return BasicFactor(fac_name, func_name, parsed_args, parsed_kwargs, desc=fac_info['desc'] if isinstance(fac_info, dict) else None)
     else:
         return fac_str

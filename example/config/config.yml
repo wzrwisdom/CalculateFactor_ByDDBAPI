@@ -45,3 +45,10 @@ price_info:
     price_cols: ['close']
     sec_col: 'securityid'
     time_col: 'tradetime'
+
+snap_price_info:
+    price_dbPath: 'dfs://CROSS_SECTION_3sec'
+    price_tbName: 'snap_info'
+    price_cols: ['b1', 's1', 'bs_avg_price']
+    sec_col: 'securityid'
+    time_col: 'tradetime'

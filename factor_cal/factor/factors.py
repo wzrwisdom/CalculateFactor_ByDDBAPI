@@ -32,12 +32,12 @@ class Factors:
             if (fac_name in self.fac_category[cat_name]):
                 raise Warning(f"[Factor]{fac_name} already exists in [Fac Catetory]{cat_name}")
             
-            if isinstance(fac_info, dict):
-                fac = BasicFactor(fac_name, fac_info['func_name'], fac_info['args'], fac_info['kwargs'])
+            if isinstance(fac_info, dict) and 'formula' in fac_info:
+                fac = create_factor_by_str(fac_name, fac_info)
+            else:
+                fac = BasicFactor(fac_name, fac_info['func_name'], fac_info['args'], fac_info['kwargs'], fac_info['desc'])
                 # args = self.features.get_data_by_featList(fac_info['args'])
                 # fac.set_args(*args, **fac_info['kwargs'])
-            elif isinstance(fac_info, str):
-                fac = create_factor_by_str(fac_name, fac_info)
 
             self.fac_category[cat_name].append(fac_name)
             self.fac_dict[fac_name] = fac

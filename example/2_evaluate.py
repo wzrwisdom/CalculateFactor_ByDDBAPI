@@ -137,9 +137,9 @@ def my_compute_forward_returns(factor, bid1, ask1, periods=(1, 5, 10), filter_zs
     column_list = []
     for period in sorted(periods):
         if cumulative_returns:
-            returns = ask1 / bid1.shift(period) - 1
+            returns = bid1 / ask1.shift(period) - 1
         else:
-            returns = ask1 / bid1.shift() - 1
+            returns = bid1 / ask1.shift() - 1
 
         forward_returns = \
             returns.shift(-period).reindex(factor_dateindex)

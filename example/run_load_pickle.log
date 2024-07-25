@@ -1,66 +1,3 @@
-[Current date]:  20230922
-Loading order info
-  before load_order_info 一共占用73.56MB
-There are 23 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 112316576
-Loading trade info
-  before load_trade_info 一共占用108.11MB
-There are 18 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 89512264
-Loading snap info
-  before load_snap_info 一共占用84.89MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 20533871
-[Current date]:  20230923
-[Current date]:  20230924
-[Current date]:  20230925
-[Current date]:  20230926
-[Current date]:  20230927
-[Current date]:  20230928
-[Current date]:  20230929
 [Current date]:  20230930
 [Current date]:  20231001
 [Current date]:  20231002
@@ -71,489 +8,8 @@ There are 5 batches to save
 [Current date]:  20231007
 [Current date]:  20231008
 [Current date]:  20231009
-[Current date]:  20231010
-[Current date]:  20231011
-[Current date]:  20231012
-[Current date]:  20231013
-[Current date]:  20231014
-[Current date]:  20231015
-[Current date]:  20231016
-[Current date]:  20231017
-[Current date]:  20231018
-[Current date]:  20231019
-[Current date]:  20231020
-[Current date]:  20231021
-[Current date]:  20231022
-[Current date]:  20231023
-[Current date]:  20231024
-[Current date]:  20231025
-[Current date]:  20231026
-[Current date]:  20231027
-[Current date]:  20231028
-[Current date]:  20231029
-[Current date]:  20231030
-[Current date]:  20231031
-[Current date]:  20231101
-[Current date]:  20231102
-[Current date]:  20231103
-[Current date]:  20231104
-[Current date]:  20231105
-[Current date]:  20231106
-[Current date]:  20231107
-[Current date]:  20231108
-[Current date]:  20231109
-[Current date]:  20231110
-[Current date]:  20231111
-[Current date]:  20231112
-[Current date]:  20231113
-[Current date]:  20231114
-[Current date]:  20231115
-[Current date]:  20231116
-[Current date]:  20231117
-[Current date]:  20231118
-[Current date]:  20231119
-[Current date]:  20231120
-[Current date]:  20231121
-[Current date]:  20231122
-[Current date]:  20231123
-[Current date]:  20231124
-[Current date]:  20231125
-[Current date]:  20231126
-[Current date]:  20231127
-[Current date]:  20231128
-[Current date]:  20231129
-[Current date]:  20231130
-[Current date]:  20231201
-[Current date]:  20231202
-[Current date]:  20231203
-[Current date]:  20231204
-[Current date]:  20231205
-[Current date]:  20231206
-[Current date]:  20231207
-[Current date]:  20231208
-[Current date]:  20231209
-[Current date]:  20231210
-[Current date]:  20231211
-[Current date]:  20231212
-[Current date]:  20231213
-[Current date]:  20231214
-[Current date]:  20231215
-[Current date]:  20231216
-[Current date]:  20231217
-[Current date]:  20231218
-[Current date]:  20231219
-[Current date]:  20231220
-[Current date]:  20231221
-[Current date]:  20231222
-[Current date]:  20231223
-[Current date]:  20231224
-[Current date]:  20231225
-[Current date]:  20231226
-[Current date]:  20231227
-[Current date]:  20231228
-[Current date]:  20231229
-[Current date]:  20231230
-[Current date]:  20231231
-[Current date]:  20240101
-[Current date]:  20240102
-[Current date]:  20240103
-[Current date]:  20240104
-[Current date]:  20240105
-[Current date]:  20240106
-[Current date]:  20240107
-[Current date]:  20240108
-[Current date]:  20240109
-[Current date]:  20240110
-[Current date]:  20240111
-[Current date]:  20240112
-[Current date]:  20240113
-[Current date]:  20240114
-[Current date]:  20240115
-[Current date]:  20240116
-[Current date]:  20240117
-[Current date]:  20240118
-[Current date]:  20240119
-[Current date]:  20240120
-[Current date]:  20240121
-[Current date]:  20240122
-[Current date]:  20240123
-[Current date]:  20240124
-[Current date]:  20240125
-[Current date]:  20240126
-[Current date]:  20240127
-[Current date]:  20240128
-[Current date]:  20240129
-[Current date]:  20240130
-[Current date]:  20240131
-[Current date]:  20240201
-[Current date]:  20240202
-[Current date]:  20240203
-[Current date]:  20240204
-[Current date]:  20240205
-[Current date]:  20240206
-[Current date]:  20240207
 Loading order info
-  before load_order_info 一共占用85.76MB
-There are 34 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 145000000
-	Saving batch 29 from 145000000 to 150000000
-	Saving batch 30 from 150000000 to 155000000
-	Saving batch 31 from 155000000 to 160000000
-	Saving batch 32 from 160000000 to 165000000
-	Saving batch 33 from 165000000 to 166460509
-Loading trade info
-  before load_trade_info 一共占用103.05MB
-There are 29 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 142528958
-Loading snap info
-  before load_snap_info 一共占用89.55MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 23135716
-[Current date]:  20240208
-Loading order info
-  before load_order_info 一共占用89.97MB
-There are 33 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 145000000
-	Saving batch 29 from 145000000 to 150000000
-	Saving batch 30 from 150000000 to 155000000
-	Saving batch 31 from 155000000 to 160000000
-	Saving batch 32 from 160000000 to 161641640
-Loading trade info
-  before load_trade_info 一共占用90.36MB
-There are 28 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 138543352
-Loading snap info
-  before load_snap_info 一共占用90.95MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 23507676
-[Current date]:  20240209
-[Current date]:  20240210
-[Current date]:  20240211
-[Current date]:  20240212
-[Current date]:  20240213
-[Current date]:  20240214
-[Current date]:  20240215
-[Current date]:  20240216
-[Current date]:  20240217
-[Current date]:  20240218
-[Current date]:  20240219
-Loading order info
-  before load_order_info 一共占用91.30MB
-There are 29 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 144765454
-Loading trade info
-  before load_trade_info 一共占用91.98MB
-There are 25 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 123069175
-Loading snap info
-  before load_snap_info 一共占用92.50MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 22436510
-[Current date]:  20240220
-Loading order info
-  before load_order_info 一共占用92.65MB
-There are 25 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 123012707
-Loading trade info
-  before load_trade_info 一共占用124.84MB
-There are 21 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 100119215
-Loading snap info
-  before load_snap_info 一共占用99.55MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 21645593
-[Current date]:  20240221
-Loading order info
-  before load_order_info 一共占用94.12MB
-There are 28 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 135995307
-Loading trade info
-  before load_trade_info 一共占用132.31MB
-There are 23 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 25000000
-	Saving batch 5 from 25000000 to 30000000
-	Saving batch 6 from 30000000 to 35000000
-	Saving batch 7 from 35000000 to 40000000
-	Saving batch 8 from 40000000 to 45000000
-	Saving batch 9 from 45000000 to 50000000
-	Saving batch 10 from 50000000 to 55000000
-	Saving batch 11 from 55000000 to 60000000
-	Saving batch 12 from 60000000 to 65000000
-	Saving batch 13 from 65000000 to 70000000
-	Saving batch 14 from 70000000 to 75000000
-	Saving batch 15 from 75000000 to 80000000
-	Saving batch 16 from 80000000 to 85000000
-	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 95000000
-	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 111665663
-Loading snap info
-  before load_snap_info 一共占用94.96MB
-There are 5 batches to save
-	Saving batch 0 from 0 to 5000000
-	Saving batch 1 from 5000000 to 10000000
-	Saving batch 2 from 10000000 to 15000000
-	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 22595989
-[Current date]:  20240222
-Loading order info
-  before load_order_info 一共占用95.32MB
+  before load_order_info 一共占用50.25MB
 There are 24 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -578,9 +34,67 @@ There are 24 batches to save
 	Saving batch 20 from 100000000 to 105000000
 	Saving batch 21 from 105000000 to 110000000
 	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 117584855
+	Saving batch 23 from 115000000 to 115157667
 Loading trade info
-  before load_trade_info 一共占用123.08MB
+  before load_trade_info 一共占用66.41MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 95272126
+Loading snap info
+  before load_snap_info 一共占用78.74MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20620819
+[Current date]:  20231010
+Loading order info
+  before load_order_info 一共占用63.37MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 111891209
+Loading trade info
+  before load_trade_info 一共占用83.17MB
 There are 19 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -600,19 +114,534 @@ There are 19 batches to save
 	Saving batch 15 from 75000000 to 80000000
 	Saving batch 16 from 80000000 to 85000000
 	Saving batch 17 from 85000000 to 90000000
-	Saving batch 18 from 90000000 to 94138066
+	Saving batch 18 from 90000000 to 91570966
 Loading snap info
-  before load_snap_info 一共占用96.44MB
+  before load_snap_info 一共占用64.02MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19910353
+[Current date]:  20231011
+Loading order info
+  before load_order_info 一共占用64.39MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 117779864
+Loading trade info
+  before load_trade_info 一共占用94.05MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 95677401
+Loading snap info
+  before load_snap_info 一共占用106.30MB
 There are 5 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
 	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 21611997
-[Current date]:  20240223
+	Saving batch 4 from 20000000 to 20447435
+[Current date]:  20231012
 Loading order info
-  before load_order_info 一共占用96.82MB
-There are 27 batches to save
+  before load_order_info 一共占用64.89MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 114855145
+Loading trade info
+  before load_trade_info 一共占用65.51MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92428024
+Loading snap info
+  before load_snap_info 一共占用65.44MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20210642
+[Current date]:  20231013
+Loading order info
+  before load_order_info 一共占用65.77MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 112395025
+Loading trade info
+  before load_trade_info 一共占用91.15MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 91392516
+Loading snap info
+  before load_snap_info 一共占用66.24MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19944673
+[Current date]:  20231014
+[Current date]:  20231015
+[Current date]:  20231016
+Loading order info
+  before load_order_info 一共占用66.46MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116167381
+Loading trade info
+  before load_trade_info 一共占用66.63MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 95527912
+Loading snap info
+  before load_snap_info 一共占用99.38MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20195704
+[Current date]:  20231017
+Loading order info
+  before load_order_info 一共占用67.04MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 111109769
+Loading trade info
+  before load_trade_info 一共占用67.55MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 89086208
+Loading snap info
+  before load_snap_info 一共占用67.75MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19768481
+[Current date]:  20231018
+Loading order info
+  before load_order_info 一共占用68.05MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 109545242
+Loading trade info
+  before load_trade_info 一共占用68.29MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 88998012
+Loading snap info
+  before load_snap_info 一共占用68.91MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19636687
+[Current date]:  20231019
+Loading order info
+  before load_order_info 一共占用68.76MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116848101
+Loading trade info
+  before load_trade_info 一共占用68.85MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94792285
+Loading snap info
+  before load_snap_info 一共占用68.80MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20178828
+[Current date]:  20231020
+Loading order info
+  before load_order_info 一共占用127.72MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 112293603
+Loading trade info
+  before load_trade_info 一共占用92.77MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 90015727
+Loading snap info
+  before load_snap_info 一共占用69.62MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19875788
+[Current date]:  20231021
+[Current date]:  20231022
+[Current date]:  20231023
+Loading order info
+  before load_order_info 一共占用69.21MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 115326597
+Loading trade info
+  before load_trade_info 一共占用81.59MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94519865
+Loading snap info
+  before load_snap_info 一共占用130.14MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20347981
+[Current date]:  20231024
+Loading order info
+  before load_order_info 一共占用70.12MB
+There are 26 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
@@ -638,11 +667,43 @@ There are 27 batches to save
 	Saving batch 22 from 110000000 to 115000000
 	Saving batch 23 from 115000000 to 120000000
 	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 131660107
+	Saving batch 25 from 125000000 to 126789945
 Loading trade info
-  before load_trade_info 一共占用97.45MB
-There are 22 batches to save
+  before load_trade_info 一共占用70.30MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 102446858
+Loading snap info
+  before load_snap_info 一共占用70.18MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20873759
+[Current date]:  20231025
+Loading order info
+  before load_order_info 一共占用70.16MB
+There are 26 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
@@ -664,20 +725,108 @@ There are 22 batches to save
 	Saving batch 18 from 90000000 to 95000000
 	Saving batch 19 from 95000000 to 100000000
 	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 107047643
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 127499381
+Loading trade info
+  before load_trade_info 一共占用96.53MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 103640907
 Loading snap info
-  before load_snap_info 一共占用97.90MB
+  before load_snap_info 一共占用69.96MB
 There are 5 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
 	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 22270231
-[Current date]:  20240224
-[Current date]:  20240225
-[Current date]:  20240226
+	Saving batch 4 from 20000000 to 20467830
+[Current date]:  20231026
 Loading order info
-  before load_order_info 一共占用98.14MB
+  before load_order_info 一共占用70.12MB
+There are 26 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 127433328
+Loading trade info
+  before load_trade_info 一共占用95.71MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 102185566
+Loading snap info
+  before load_snap_info 一共占用70.60MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20631794
+[Current date]:  20231027
+Loading order info
+  before load_order_info 一共占用70.72MB
 There are 28 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -706,9 +855,9 @@ There are 28 batches to save
 	Saving batch 24 from 120000000 to 125000000
 	Saving batch 25 from 125000000 to 130000000
 	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 138919798
+	Saving batch 27 from 135000000 to 137000361
 Loading trade info
-  before load_trade_info 一共占用139.71MB
+  before load_trade_info 一共占用73.76MB
 There are 23 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -732,18 +881,88 @@ There are 23 batches to save
 	Saving batch 19 from 95000000 to 100000000
 	Saving batch 20 from 100000000 to 105000000
 	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 114975859
+	Saving batch 22 from 110000000 to 110765101
 Loading snap info
-  before load_snap_info 一共占用99.24MB
+  before load_snap_info 一共占用120.14MB
 There are 5 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
 	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 22841756
-[Current date]:  20240227
+	Saving batch 4 from 20000000 to 21434435
+[Current date]:  20231028
+[Current date]:  20231029
+[Current date]:  20231030
 Loading order info
-  before load_order_info 一共占用99.59MB
+  before load_order_info 一共占用73.73MB
+There are 29 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 130000000
+	Saving batch 26 from 130000000 to 135000000
+	Saving batch 27 from 135000000 to 140000000
+	Saving batch 28 from 140000000 to 143630277
+Loading trade info
+  before load_trade_info 一共占用111.92MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 117742835
+Loading snap info
+  before load_snap_info 一共占用73.96MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21808211
+[Current date]:  20231031
+Loading order info
+  before load_order_info 一共占用73.66MB
 There are 27 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -771,9 +990,253 @@ There are 27 batches to save
 	Saving batch 23 from 115000000 to 120000000
 	Saving batch 24 from 120000000 to 125000000
 	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 134554449
+	Saving batch 26 from 130000000 to 131811522
 Loading trade info
-  before load_trade_info 一共占用99.94MB
+  before load_trade_info 一共占用73.78MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 106842253
+Loading snap info
+  before load_snap_info 一共占用73.58MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21140193
+[Current date]:  20231101
+Loading order info
+  before load_order_info 一共占用73.74MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 121102332
+Loading trade info
+  before load_trade_info 一共占用115.95MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 96726286
+Loading snap info
+  before load_snap_info 一共占用74.11MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20942122
+[Current date]:  20231102
+Loading order info
+  before load_order_info 一共占用74.21MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116035301
+Loading trade info
+  before load_trade_info 一共占用113.96MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92940156
+Loading snap info
+  before load_snap_info 一共占用74.60MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20494296
+[Current date]:  20231103
+Loading order info
+  before load_order_info 一共占用74.45MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120054279
+Loading trade info
+  before load_trade_info 一共占用75.24MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 95689969
+Loading snap info
+  before load_snap_info 一共占用116.59MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20988943
+[Current date]:  20231104
+[Current date]:  20231105
+[Current date]:  20231106
+Loading order info
+  before load_order_info 一共占用74.36MB
+There are 27 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 130000000
+	Saving batch 26 from 130000000 to 134324820
+Loading trade info
+  before load_trade_info 一共占用136.36MB
 There are 23 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
@@ -797,19 +1260,19 @@ There are 23 batches to save
 	Saving batch 19 from 95000000 to 100000000
 	Saving batch 20 from 100000000 to 105000000
 	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 110314708
+	Saving batch 22 from 110000000 to 110489109
 Loading snap info
-  before load_snap_info 一共占用119.58MB
+  before load_snap_info 一共占用104.43MB
 There are 5 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
 	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 22360693
-[Current date]:  20240228
+	Saving batch 4 from 20000000 to 21710919
+[Current date]:  20231107
 Loading order info
-  before load_order_info 一共占用100.78MB
-There are 36 batches to save
+  before load_order_info 一共占用74.62MB
+There are 26 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
@@ -835,20 +1298,10 @@ There are 36 batches to save
 	Saving batch 22 from 110000000 to 115000000
 	Saving batch 23 from 115000000 to 120000000
 	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 145000000
-	Saving batch 29 from 145000000 to 150000000
-	Saving batch 30 from 150000000 to 155000000
-	Saving batch 31 from 155000000 to 160000000
-	Saving batch 32 from 160000000 to 165000000
-	Saving batch 33 from 165000000 to 170000000
-	Saving batch 34 from 170000000 to 175000000
-	Saving batch 35 from 175000000 to 176764627
+	Saving batch 25 from 125000000 to 128670165
 Loading trade info
-  before load_trade_info 一共占用101.40MB
-There are 30 batches to save
+  before load_trade_info 一共占用113.25MB
+There are 21 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
@@ -869,22 +1322,2333 @@ There are 30 batches to save
 	Saving batch 17 from 85000000 to 90000000
 	Saving batch 18 from 90000000 to 95000000
 	Saving batch 19 from 95000000 to 100000000
-	Saving batch 20 from 100000000 to 105000000
-	Saving batch 21 from 105000000 to 110000000
-	Saving batch 22 from 110000000 to 115000000
-	Saving batch 23 from 115000000 to 120000000
-	Saving batch 24 from 120000000 to 125000000
-	Saving batch 25 from 125000000 to 130000000
-	Saving batch 26 from 130000000 to 135000000
-	Saving batch 27 from 135000000 to 140000000
-	Saving batch 28 from 140000000 to 145000000
-	Saving batch 29 from 145000000 to 148852892
+	Saving batch 20 from 100000000 to 103794624
 Loading snap info
-  before load_snap_info 一共占用101.79MB
+  before load_snap_info 一共占用75.12MB
 There are 5 batches to save
 	Saving batch 0 from 0 to 5000000
 	Saving batch 1 from 5000000 to 10000000
 	Saving batch 2 from 10000000 to 15000000
 	Saving batch 3 from 15000000 to 20000000
-	Saving batch 4 from 20000000 to 23927453
-Finished!
+	Saving batch 4 from 20000000 to 21342579
+[Current date]:  20231108
+Loading order info
+  before load_order_info 一共占用74.99MB
+There are 27 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 130000000
+	Saving batch 26 from 130000000 to 130987940
+Loading trade info
+  before load_trade_info 一共占用112.78MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 106122574
+Loading snap info
+  before load_snap_info 一共占用75.21MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21242002
+[Current date]:  20231109
+Loading order info
+  before load_order_info 一共占用75.05MB
+There are 26 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 128527439
+Loading trade info
+  before load_trade_info 一共占用112.16MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 103150298
+Loading snap info
+  before load_snap_info 一共占用75.17MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21018581
+[Current date]:  20231110
+Loading order info
+  before load_order_info 一共占用74.95MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 118918941
+Loading trade info
+  before load_trade_info 一共占用116.24MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94642468
+Loading snap info
+  before load_snap_info 一共占用137.00MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20407628
+[Current date]:  20231111
+[Current date]:  20231112
+[Current date]:  20231113
+Loading order info
+  before load_order_info 一共占用75.06MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 122200968
+Loading trade info
+  before load_trade_info 一共占用75.13MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 98735298
+Loading snap info
+  before load_snap_info 一共占用75.17MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21168261
+[Current date]:  20231114
+Loading order info
+  before load_order_info 一共占用74.97MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120023275
+Loading trade info
+  before load_trade_info 一共占用75.11MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 96460642
+Loading snap info
+  before load_snap_info 一共占用75.13MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20904389
+[Current date]:  20231115
+Loading order info
+  before load_order_info 一共占用74.86MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 124757244
+Loading trade info
+  before load_trade_info 一共占用75.13MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 100289079
+Loading snap info
+  before load_snap_info 一共占用92.53MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21024670
+[Current date]:  20231116
+Loading order info
+  before load_order_info 一共占用75.07MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 115680940
+Loading trade info
+  before load_trade_info 一共占用100.96MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92767401
+Loading snap info
+  before load_snap_info 一共占用75.13MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20531426
+[Current date]:  20231117
+Loading order info
+  before load_order_info 一共占用74.98MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116174358
+Loading trade info
+  before load_trade_info 一共占用119.84MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92855270
+Loading snap info
+  before load_snap_info 一共占用75.04MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20715360
+[Current date]:  20231118
+[Current date]:  20231119
+[Current date]:  20231120
+Loading order info
+  before load_order_info 一共占用74.85MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 123896125
+Loading trade info
+  before load_trade_info 一共占用116.07MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 100080780
+Loading snap info
+  before load_snap_info 一共占用79.23MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21373923
+[Current date]:  20231121
+Loading order info
+  before load_order_info 一共占用74.93MB
+There are 26 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 126025035
+Loading trade info
+  before load_trade_info 一共占用114.17MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 102484611
+Loading snap info
+  before load_snap_info 一共占用75.09MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21253592
+[Current date]:  20231122
+Loading order info
+  before load_order_info 一共占用74.97MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120047395
+Loading trade info
+  before load_trade_info 一共占用75.66MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 97261834
+Loading snap info
+  before load_snap_info 一共占用74.76MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20814071
+[Current date]:  20231123
+Loading order info
+  before load_order_info 一共占用74.94MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 117945004
+Loading trade info
+  before load_trade_info 一共占用106.10MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94034868
+Loading snap info
+  before load_snap_info 一共占用75.18MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20782764
+[Current date]:  20231124
+Loading order info
+  before load_order_info 一共占用74.79MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 117984262
+Loading trade info
+  before load_trade_info 一共占用106.44MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94687217
+Loading snap info
+  before load_snap_info 一共占用75.12MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20762132
+[Current date]:  20231125
+[Current date]:  20231126
+[Current date]:  20231127
+Loading order info
+  before load_order_info 一共占用75.00MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120837132
+Loading trade info
+  before load_trade_info 一共占用107.09MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 97640615
+Loading snap info
+  before load_snap_info 一共占用75.25MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20919349
+[Current date]:  20231128
+Loading order info
+  before load_order_info 一共占用75.25MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 117379835
+Loading trade info
+  before load_trade_info 一共占用100.38MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92898481
+Loading snap info
+  before load_snap_info 一共占用75.22MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20929204
+[Current date]:  20231129
+Loading order info
+  before load_order_info 一共占用75.11MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 113494728
+Loading trade info
+  before load_trade_info 一共占用111.68MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 90053656
+Loading snap info
+  before load_snap_info 一共占用77.66MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20645870
+[Current date]:  20231130
+Loading order info
+  before load_order_info 一共占用75.05MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116035269
+Loading trade info
+  before load_trade_info 一共占用114.66MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 92872387
+Loading snap info
+  before load_snap_info 一共占用75.36MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20955733
+[Current date]:  20231201
+Loading order info
+  before load_order_info 一共占用75.26MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 121067896
+Loading trade info
+  before load_trade_info 一共占用115.70MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 96579394
+Loading snap info
+  before load_snap_info 一共占用75.20MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21019192
+[Current date]:  20231202
+[Current date]:  20231203
+[Current date]:  20231204
+Loading order info
+  before load_order_info 一共占用75.19MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120540280
+Loading trade info
+  before load_trade_info 一共占用95.61MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 96869171
+Loading snap info
+  before load_snap_info 一共占用75.42MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20991513
+[Current date]:  20231205
+Loading order info
+  before load_order_info 一共占用74.98MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 118441320
+Loading trade info
+  before load_trade_info 一共占用111.08MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94958221
+Loading snap info
+  before load_snap_info 一共占用74.93MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20672807
+[Current date]:  20231206
+Loading order info
+  before load_order_info 一共占用74.97MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 124479002
+Loading trade info
+  before load_trade_info 一共占用75.34MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 98648837
+Loading snap info
+  before load_snap_info 一共占用75.27MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20956516
+[Current date]:  20231207
+Loading order info
+  before load_order_info 一共占用75.31MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 122213955
+Loading trade info
+  before load_trade_info 一共占用75.65MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 96486408
+Loading snap info
+  before load_snap_info 一共占用75.69MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20979349
+[Current date]:  20231208
+Loading order info
+  before load_order_info 一共占用75.73MB
+There are 27 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 130000000
+	Saving batch 26 from 130000000 to 130799038
+Loading trade info
+  before load_trade_info 一共占用105.82MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 105113504
+Loading snap info
+  before load_snap_info 一共占用81.97MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21390609
+[Current date]:  20231209
+[Current date]:  20231210
+[Current date]:  20231211
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+Loading order info
+  before load_order_info 一共占用75.48MB
+There are 28 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 130000000
+	Saving batch 26 from 130000000 to 135000000
+	Saving batch 27 from 135000000 to 136967650
+Loading trade info
+  before load_trade_info 一共占用75.69MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 110087387
+Loading snap info
+  before load_snap_info 一共占用80.38MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21896145
+[Current date]:  20231212
+Loading order info
+  before load_order_info 一共占用75.06MB
+There are 24 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 116557255
+Loading trade info
+  before load_trade_info 一共占用134.68MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 91601682
+Loading snap info
+  before load_snap_info 一共占用75.32MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20669253
+[Current date]:  20231213
+Loading order info
+  before load_order_info 一共占用75.44MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 112289969
+Loading trade info
+  before load_trade_info 一共占用99.85MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 88783742
+Loading snap info
+  before load_snap_info 一共占用75.84MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20650432
+[Current date]:  20231214
+Loading order info
+  before load_order_info 一共占用75.58MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 111427055
+Loading trade info
+  before load_trade_info 一共占用129.88MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 86995170
+Loading snap info
+  before load_snap_info 一共占用75.94MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20460292
+[Current date]:  20231215
+Loading order info
+  before load_order_info 一共占用76.04MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 113716464
+Loading trade info
+  before load_trade_info 一共占用115.01MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 88803082
+Loading snap info
+  before load_snap_info 一共占用76.05MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20593533
+[Current date]:  20231216
+[Current date]:  20231217
+[Current date]:  20231218
+Loading order info
+  before load_order_info 一共占用76.05MB
+There are 23 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 112419700
+Loading trade info
+  before load_trade_info 一共占用101.75MB
+There are 18 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 88923322
+Loading snap info
+  before load_snap_info 一共占用76.25MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20506701
+[Current date]:  20231219
+Loading order info
+  before load_order_info 一共占用76.17MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 106676240
+Loading trade info
+  before load_trade_info 一共占用76.25MB
+There are 17 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 83037042
+Loading snap info
+  before load_snap_info 一共占用76.28MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20214291
+[Current date]:  20231220
+Loading order info
+  before load_order_info 一共占用76.29MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 106782598
+Loading trade info
+  before load_trade_info 一共占用76.35MB
+There are 17 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 84454200
+Loading snap info
+  before load_snap_info 一共占用135.74MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20272853
+[Current date]:  20231221
+Loading order info
+  before load_order_info 一共占用76.17MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 120474757
+Loading trade info
+  before load_trade_info 一共占用94.30MB
+There are 19 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 94900003
+Loading snap info
+  before load_snap_info 一共占用76.33MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21159869
+[Current date]:  20231222
+Loading order info
+  before load_order_info 一共占用76.17MB
+There are 25 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 124064684
+Loading trade info
+  before load_trade_info 一共占用119.05MB
+There are 20 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 99293331
+Loading snap info
+  before load_snap_info 一共占用133.43MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21001858
+[Current date]:  20231223
+[Current date]:  20231224
+[Current date]:  20231225
+Loading order info
+  before load_order_info 一共占用76.12MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 105800538
+Loading trade info
+  before load_trade_info 一共占用106.62MB
+There are 17 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 83811155
+Loading snap info
+  before load_snap_info 一共占用76.03MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20168669
+[Current date]:  20231226
+Loading order info
+  before load_order_info 一共占用132.05MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 103174342
+Loading trade info
+  before load_trade_info 一共占用109.67MB
+There are 17 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 81844175
+Loading snap info
+  before load_snap_info 一共占用76.32MB
+There are 4 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 19970753
+[Current date]:  20231227
+Loading order info
+  before load_order_info 一共占用76.19MB
+There are 22 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 107805369
+Loading trade info
+  before load_trade_info 一共占用105.70MB
+There are 17 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 83436644
+Loading snap info
+  before load_snap_info 一共占用76.31MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 20251301
+[Current date]:  20231228
+Loading order info
+  before load_order_info 一共占用76.09MB
+There are 26 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 105000000
+	Saving batch 21 from 105000000 to 110000000
+	Saving batch 22 from 110000000 to 115000000
+	Saving batch 23 from 115000000 to 120000000
+	Saving batch 24 from 120000000 to 125000000
+	Saving batch 25 from 125000000 to 129323070
+Loading trade info
+  before load_trade_info 一共占用138.16MB
+There are 21 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 25000000
+	Saving batch 5 from 25000000 to 30000000
+	Saving batch 6 from 30000000 to 35000000
+	Saving batch 7 from 35000000 to 40000000
+	Saving batch 8 from 40000000 to 45000000
+	Saving batch 9 from 45000000 to 50000000
+	Saving batch 10 from 50000000 to 55000000
+	Saving batch 11 from 55000000 to 60000000
+	Saving batch 12 from 60000000 to 65000000
+	Saving batch 13 from 65000000 to 70000000
+	Saving batch 14 from 70000000 to 75000000
+	Saving batch 15 from 75000000 to 80000000
+	Saving batch 16 from 80000000 to 85000000
+	Saving batch 17 from 85000000 to 90000000
+	Saving batch 18 from 90000000 to 95000000
+	Saving batch 19 from 95000000 to 100000000
+	Saving batch 20 from 100000000 to 103174416
+Loading snap info
+  before load_snap_info 一共占用76.38MB
+There are 5 batches to save
+	Saving batch 0 from 0 to 5000000
+	Saving batch 1 from 5000000 to 10000000
+	Saving batch 2 from 10000000 to 15000000
+	Saving batch 3 from 15000000 to 20000000
+	Saving batch 4 from 20000000 to 21707827
+[Current date]:  20231229
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+/home/wangzirui/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/core/series.py:917: RuntimeWarning: invalid value encountered in cast
+  arr = np.asarray(values, dtype=dtype)
+Loading order info
+  before load_order_info 一共占用76.15MB
+Traceback (most recent call last):
+  File "0_load_pickle.py", line 43, in <module>
+    load_order_info(orderTb, order_filepath)
+  File "/home/wangzirui/workspace/CalculateFactor_ByDDBAPI/example/../HFDataPickle/load_info.py", line 20, in load_order_info
+    data = read_pickle(filepath)
+  File "/home/wangzirui/workspace/CalculateFactor_ByDDBAPI/example/../HFDataPickle/load_info.py", line 16, in read_pickle
+    data = pickle.load(f)
+  File "/home/wangzirui/miniconda3/envs/py38/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/home/wangzirui/miniconda3/envs/py38/lib/python3.8/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/home/wangzirui/miniconda3/envs/py38/lib/python3.8/gzip.py", line 498, in read
+    raise EOFError("Compressed file ended before the "
+EOFError: Compressed file ended before the end-of-stream marker was reached

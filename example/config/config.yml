@@ -1,23 +1,5 @@
-# start_time: '2023.04.20 09:30:00'
-# end_time: '2023.04.20 10:00:00'
-
-# sec_list: ['000002', '000004']
-
-# features:
-#     - 
-#         ddb_name: 'dfs://CROSS_SECTION_6sec'
-#         tb_features: !inc CROSS_SECTION_6sec.yml
-
-# factors: 
-#     facType_one: !inc factors.yml
-
-# factor_dbPath: 'dfs://FACTOR_TEST_DB'
-# factor_tbName: 'freq_1s'
-
-
 start_date: '2023.09.22'
-end_date: '2024.02.20'
-# end_date: '2024.02.29'
+end_date: '2023.09.30'
 
 start_time: '09:30:00'
 end_time: '15:00:00'

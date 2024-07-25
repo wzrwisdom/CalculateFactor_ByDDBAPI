@@ -205,3 +205,14 @@ def bs_press(press_buy: np.ndarray, press_sell: np.ndarray):
     log_sell = np.log(press_sell)
     log_sell[log_sell == -np.inf] = 0
     return log_buy - log_sell
+
+@register_facFunc('trade_info_in_high_price')
+def trade_info_in_high_price(number, price, window:int=5*20, perc:float=0.8):
+    assert number.shape == price.shape, "The shape of number and price should be the same"
+    p_df = pd.DataFrame(price)
+    prank_df = p_df.rolling(window=window).rank(pct=True, numeric_only=True)
+    n_df = pd.DataFrame(number)
+    n_in_hp = n_df[prank_df > 0.8].rolling(window=window, min_periods=1).sum()
+    n_total = n_df.rolling(window=window, min_periods=1).sum()
+    res = n_in_hp / n_total
+    return res.to_numpy()

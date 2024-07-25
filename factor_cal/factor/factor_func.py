@@ -206,13 +206,41 @@ def bs_press(press_buy: np.ndarray, press_sell: np.ndarray):
     log_sell[log_sell == -np.inf] = 0
     return log_buy - log_sell
 
-@register_facFunc('trade_info_in_high_price')
-def trade_info_in_high_price(number, price, window:int=5*20, perc:float=0.8):
+@register_facFunc('trade_info_in_price_region')
+def trade_info_in_price_region(number, price, op:str='gt', window:int=5*20, perc:float=0.8):
     assert number.shape == price.shape, "The shape of number and price should be the same"
     p_df = pd.DataFrame(price)
     prank_df = p_df.rolling(window=window).rank(pct=True, numeric_only=True)
     n_df = pd.DataFrame(number)
-    n_in_hp = n_df[prank_df > 0.8].rolling(window=window, min_periods=1).sum()
+    if op=='gt':
+        n_in_pregion = n_df[prank_df > perc].rolling(window=window, min_periods=1).sum()
+    elif op=='lt':
+        n_in_pregion = n_df[prank_df < perc].rolling(window=window, min_periods=1).sum()
+    else:
+        raise ValueError("The 'op' parameter should be 'gt' or 'lt'")
     n_total = n_df.rolling(window=window, min_periods=1).sum()
-    res = n_in_hp / n_total
+    res = n_in_pregion / n_total
+    return res.to_numpy()
+
+
+@register_facFunc('trade_avgvol_in_high_price')
+def trade_avgvol_in_high_price(vol, num, price, op:str='gt', window:int=5*20, perc:float=0.8):
+    assert (num.shape == price.shape) and (vol.shape == price.shape), "The shape of vol, num and price should be the same"
+    p_df = pd.DataFrame(price)
+    prank_df = p_df.rolling(window=window).rank(pct=True, numeric_only=True)
+    n_df = pd.DataFrame(num)
+    vol_df = pd.DataFrame(vol)
+    if op=='gt':
+        n_in_pregion = n_df[prank_df > perc].rolling(window=window, min_periods=1).sum()
+        v_in_pregion = vol_df[prank_df > perc].rolling(window=window, min_periods=1).sum()
+    elif op=='lt':
+        n_in_pregion = n_df[prank_df < perc].rolling(window=window, min_periods=1).sum()
+        v_in_pregion = vol_df[prank_df < perc].rolling(window=window, min_periods=1).sum()
+    else:
+        raise ValueError("The 'op' parameter should be 'gt' or 'lt'")
+    n_total = n_df.rolling(window=window, min_periods=1).sum()
+    v_total = vol_df.rolling(window=window, min_periods=1).sum()
+    
+    numerator = np.where(v_in_pregion==0, 0, v_in_pregion / n_in_pregion)
+    res = numerator / (v_total/ n_total)
     return res.to_numpy()

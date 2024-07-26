@@ -244,3 +244,82 @@ def trade_avgvol_in_high_price(vol, num, price, op:str='gt', window:int=5*20, pe
     numerator = np.where(v_in_pregion==0, 0, v_in_pregion / n_in_pregion)
     res = numerator / (v_total/ n_total)
     return res.to_numpy()
+
+@register_facFunc("HCVOL")
+def HCVOL(cur_price:np.ndarray, close:np.ndarray, volume:np.ndarray, window:int=20) -> np.ndarray:
+    assert cur_price.shape == close.shape == volume.shape, "The shape of cur_price, close and volume should be the same"
+    n_obs, n_stock = cur_price.shape
+    # Initialize the array for storing the rolling information
+    rolling_res = np.full((n_obs, n_stock), np.nan)
+    
+    for i in range(n_obs-window+1):
+        p_window = cur_price[i:i+window, :]
+        c_window = close[i:i+window, :]
+        v_window = volume[i:i+window, :]
+        new_v_window = np.where(p_window > c_window[-1], v_window, 0)
+        rolling_res[i+window-1,:] = new_v_window.sum(axis=0) / v_window.sum(axis=0)
+    return rolling_res
+
+@register_facFunc("LCVOL")
+def LCVOL(cur_price:np.ndarray, close:np.ndarray, volume:np.ndarray, window:int=20) -> np.ndarray:
+    assert cur_price.shape == close.shape == volume.shape, "The shape of cur_price, close and volume should be the same"
+    n_obs, n_stock = cur_price.shape
+    # Initialize the array for storing the rolling information
+    rolling_res = np.full((n_obs, n_stock), np.nan)
+    
+    for i in range(n_obs-window+1):
+        p_window = cur_price[i:i+window, :]
+        c_window = close[i:i+window, :]
+        v_window = volume[i:i+window, :]
+        new_v_window = np.where(p_window < c_window[-1], v_window, 0)
+        rolling_res[i+window-1,:] = new_v_window.sum(axis=0) / v_window.sum(axis=0)
+    return rolling_res
+
+@register_facFunc("HCP")
+def HCP(cur_price:np.ndarray, close:np.ndarray, window:int=20) -> np.ndarray:
+    assert cur_price.shape == close.shape, "The shape of cur_price and close should be the same"
+    n_obs, n_stock = cur_price.shape
+    # Initialize the array for storing the rolling information
+    rolling_res = np.full((n_obs, n_stock), np.nan)
+    
+    for i in range(n_obs-window+1):
+        p_window = cur_price[i:i+window, :]
+        c_window = close[i:i+window, :]
+        new_p_window = np.where(p_window > c_window[-1], p_window, np.nan)
+        rolling_res[i+window-1,:] = np.nanmean(new_p_window, axis=0) / c_window[-1]
+    return rolling_res
+
+@register_facFunc("LCP")
+def LCP(cur_price:np.ndarray, close:np.ndarray, window:int=20) -> np.ndarray:
+    assert cur_price.shape == close.shape, "The shape of cur_price and close should be the same"
+    n_obs, n_stock = cur_price.shape
+    # Initialize the array for storing the rolling information
+    rolling_res = np.full((n_obs, n_stock), np.nan)
+    
+    for i in range(n_obs-window+1):
+        p_window = cur_price[i:i+window, :]
+        c_window = close[i:i+window, :]
+        new_p_window = np.where(p_window < c_window[-1], p_window, np.nan)
+        rolling_res[i+window-1,:] = np.nanmean(new_p_window, axis=0) / c_window[-1]
+    return rolling_res
+
+
+@register_facFunc("bs_power_rough")
+def bs_power_rough(buy_v:np.array, buy_p:np.array, sell_v:np.array, sell_p:np.array, close:np.array, window:int=20) -> np.ndarray:
+    assert buy_v.shape == buy_p.shape == sell_v.shape == sell_p.shape, "The shape of buy_v, buy_p, sell_v and sell_p should be the same"
+    n_obs, n_stock = buy_v.shape
+    
+    # Initialize the array for storing the rolling information
+    rolling_res = np.full((n_obs, n_stock), np.nan)
+    
+    for i in range(n_obs-window+1):
+        bv_window = buy_v[i:i+window, :]
+        bp_window = buy_p[i:i+window, :]
+        sv_window = sell_v[i:i+window, :]
+        sp_window = sell_p[i:i+window, :]
+        c = close[i+window-1, :]
+        
+        buy_power = bv_window * (bp_window / c)
+        sell_power = sv_window * ((2*c - sp_window) / c)
+        rolling_res[i+window-1,:] = buy_power.sum(axis=0) - sell_power.sum(axis=0)
+    return rolling_res

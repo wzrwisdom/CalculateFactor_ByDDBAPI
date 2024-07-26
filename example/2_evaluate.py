@@ -250,8 +250,8 @@ config = cfg.BasicConfig('config/config.yml')
 # factor_name = "pv_corr"
 
 
-# proc_types = ['OB_price', 'bid_ask_price', 'close']
-proc_types = ['bid_ask_price']
+proc_types = ['OB_price', 'bid_ask_price', 'close']
+# proc_types = ['bid_ask_price']
 for _type in proc_types:
     print("Processing type: ", _type, " ...")
     for facType in config['factors']:

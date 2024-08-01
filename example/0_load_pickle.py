@@ -24,7 +24,7 @@ end_date = "2024.01.31"
 # start_date = "2024.02.01"
 # end_date = "2024.02.29"
 
-start_date = datetime.datetime.strptime(start_date, "%Y.%m.%d")
+start_date = datetime.datetime.strptime(start_date,8"%Y.%m.%d")
 end_date = datetime.datetime.strptime(end_date, "%Y.%m.%d")
 
 cur_date = start_date

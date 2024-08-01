@@ -8,9 +8,13 @@ import sys
 sys.path.insert(0, "../")
 from alphalens import performance as perf
 import dolphindb as ddb 
-from alphalens.utils import timedelta_to_string, diff_custom_calendar_timedeltas, infer_trading_calendar
+from alphalens.utils import timedelta_to_string, diff_custom_calendar_timedeltas, infer_trading_calendar, rate_of_return
+from alphalens.performance import mean_return_by_quantile
+from alphalens.plotting import plot_quantile_returns_bar, plot_quantile_statistics_table
 from scipy.stats import mode
 import os
+import yaml
+import matplotlib.pyplot as plt
 
 
 from factor_cal.config_loader import basic_config as cfg
@@ -52,7 +56,7 @@ def get_clean_data(factor_name, date, config):
     
     
     data=alphalens.utils.get_clean_factor_and_forward_returns(
-        fac_df, prices, quantiles=1, periods=(20, 60, 100), max_loss=0.5)
+        fac_df, prices, quantiles=config['quantile'], periods=(20, 60, 100), max_loss=0.5)
     return data
 
 
@@ -85,7 +89,7 @@ def get_clean_data_OB_avgprice(factor_name, date, config):
     
     
     data=alphalens.utils.get_clean_factor_and_forward_returns(
-        fac_df, prices, quantiles=1, periods=(20, 60, 100), max_loss=0.5)
+        fac_df, prices, quantiles=config['quantile'], periods=(20, 60, 100), max_loss=0.5)
     return data
 
 def get_clean_data_OB_ask_bid_price(factor_name, date, config):
@@ -120,7 +124,7 @@ def get_clean_data_OB_ask_bid_price(factor_name, date, config):
     
     factor_data = alphalens.utils.get_clean_factor(fac_df, forward_returns, groupby=None, 
                                                    groupby_labels=None,
-                                                   quantiles=1, bins=None, 
+                                                   quantiles=config['quantile'], bins=None, 
                                                    binning_by_group=False, max_loss=0.50, zero_aware=False)
     return factor_data
 
@@ -225,7 +229,7 @@ def get_clean_data_by_type(factor_name, date, config, proc_type):
 
 def do_evaluate(factor_name, proc_type=''):
     date1 = '2023.09.22'
-    date2 = '2023.09.30'
+    date2 = '2023.09.25'
     # date2 = '2024.02.20'
 
     datas = []
@@ -237,12 +241,81 @@ def do_evaluate(factor_name, proc_type=''):
 
     data = pd.concat(datas, axis=0)
 
-    ic_summary_table = get_factor_ic_summary_info(data)
-
+    # ic_summary_table = get_factor_ic_summary_info(data)
     save_path = f'/home/wangzirui/workspace/factor_ic_summary/factor_comb_top_n/{_type}'
-    os.makedirs(save_path, exist_ok=True)
-    ic_summary_table.to_csv(f'{save_path}/{factor_name}.csv')
+    # os.makedirs(save_path, exist_ok=True)
+    # ic_summary_table.to_csv(f'{save_path}/{factor_name}.csv')
+    
+    os.makedirs(f'{save_path}/plots', exist_ok=True)
+    plot_filepath = f'{save_path}/plots/{factor_name}_quantile_return.png'
+    get_quantile_returns_bar_plot(data, plot_filepath)
 
+
+def plot_quantile_ic_bar(ic_by_q,
+                         by_group=False,
+                         ylim_percentiles=None,
+                         ax=None):
+    mean_ret_by_q = ic_by_q.copy()
+    DECIMAL_TO_BPS = 1
+
+    if ylim_percentiles is not None:
+        ymin = (np.nanpercentile(mean_ret_by_q.values,
+                                 ylim_percentiles[0]) * DECIMAL_TO_BPS)
+        ymax = (np.nanpercentile(mean_ret_by_q.values,
+                                 ylim_percentiles[1]) * DECIMAL_TO_BPS)
+    else:
+        ymin = None
+        ymax = None
+
+    if by_group:
+        num_group = len(
+            mean_ret_by_q.index.get_level_values('group').unique())
+
+        if ax is None:
+            v_spaces = ((num_group - 1) // 2) + 1
+            f, ax = plt.subplots(v_spaces, 2, sharex=False,
+                                 sharey=True, figsize=(18, 6 * v_spaces))
+            ax = ax.flatten()
+
+        for a, (sc, cor) in zip(ax, mean_ret_by_q.groupby(level='group')):
+            (cor.xs(sc, level='group')
+                .multiply(DECIMAL_TO_BPS)
+                .plot(kind='bar', title=sc, ax=a))
+
+            a.set(xlabel='', ylabel='Mean Return (bps)',
+                  ylim=(ymin, ymax))
+
+        if num_group < len(ax):
+            ax[-1].set_visible(False)
+
+        return ax
+
+    else:
+        if ax is None:
+            f, ax = plt.subplots(1, 1, figsize=(18, 6))
+
+        (mean_ret_by_q.multiply(DECIMAL_TO_BPS)
+            .plot(kind='bar',
+                  title="IC Mean By Factor Quantile", ax=ax))
+        ax.set(xlabel='', ylabel='IC Mean',
+               ylim=(ymin, ymax))
+
+        return ax
+    
+
+def get_quantile_returns_bar_plot(factor_data, plot_filepath):
+    factor_data = factor_data.rename(columns={'factor_quantile':'group'})
+    ic_result_bydate = perf.factor_information_coefficient(factor_data, by_group=True)
+    
+    ic_quantile_summary = ic_result_bydate.groupby(ic_result_bydate.index.get_level_values('group')).agg('mean')
+    
+    fig, ax = plt.subplots()
+    plot_quantile_ic_bar(ic_quantile_summary,
+                            by_group=False,
+                            ylim_percentiles=None,
+                            ax=ax)
+    
+    fig.savefig(plot_filepath)
 
 
 # read config file
@@ -251,12 +324,19 @@ config = cfg.BasicConfig('config/config.yml')
 
 
 # proc_types = ['OB_price', 'bid_ask_price', 'close']
-proc_types = ['bid_ask_price', 'close']
+proc_types = ['bid_ask_price']
+# proc_types = ['close']
+pred_type='1m'
+
+base_dir = r'/home/wangzirui/workspace/factor_ic_summary/factor_comb_top_n/bid_ask_price'
+factor_filepath = os.path.join(base_dir, f'satisfied_factors_{pred_type}_without_hcorr.yml')
+with open(factor_filepath, 'r') as f:
+    factor_names = yaml.load(f, Loader=yaml.FullLoader)
+
 for _type in proc_types:
     print("Processing type: ", _type, " ...")
-    for facType in config['factors']:
-        for facName in config['factors'][facType]:
-            print("Evaluating factor: ", facName, " ...", flush=True)
-            do_evaluate(facName, proc_type=_type)
+    for facName in factor_names:
+        print("Evaluating factor: ", facName, " ...", flush=True)
+        do_evaluate(facName, proc_type=_type)
 
 s.close()

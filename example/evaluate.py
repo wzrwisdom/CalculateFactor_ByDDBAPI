@@ -11,7 +11,7 @@ from factor_cal.config_loader import basic_config as cfg
 from factor_cal.table.ddb_table import PriceTable, SecLevelFacTable
 from factor_cal.utils import ddb_utils as du
 from factor_cal.factor_eval.basic_evaluate import get_clean_data, factor_portfolio_return,\
-    factor_information_coefficient, get_factor_ic_summary_info, plot_quantile_ic
+    factor_information_coefficient, get_factor_ic_summary_info, plot_quantile_info, plot_quantile_netvalue
 # igmore the warning of ConstantInputWarning
 warnings.filterwarnings("ignore", category=ConstantInputWarning)
 # obtain the ddb session
@@ -47,8 +47,8 @@ def load_factor_and_return(stat_date, factor_name, config):
     factor_and_ret.replace(np.inf, np.nan, inplace=True)
     
     # get trade close and return for each tradetime and each symbol
-    # close = get_trade_close_bydate(stat_date, config)
-    # td_ret = get_trade_return(close)
+    close = get_trade_close_bydate(stat_date, config)
+    td_ret = get_trade_return(close)
     
     # tidy the dataframe and quantile it
     factor_and_ret = get_clean_data(factor_and_ret, config['evaluation'])
@@ -69,10 +69,11 @@ def load_factor_and_return(stat_date, factor_name, config):
     plot_dirpath = f'{base_dirpath}/ICplot'
     os.makedirs(plot_dirpath, exist_ok=True)
     ic_group_filepath = f"{plot_dirpath}/{factor_name}.png"
-    plot_quantile_ic(ic_summary_bygroup.loc['IC Mean'], ic_group_filepath)
+    plot_quantile_info(ic_summary_bygroup.loc['IC Mean'], ic_group_filepath)
     
     # calculate pnl curve
-    port_metric_summary, port_netvalue_summary = factor_portfolio_return(factor_and_ret, td_ret, holding_time=20, long_short=True)
+    factor = factor_and_ret[['factor', 'factor_quantile']].copy()
+    port_metric_summary, port_netvalue_summary = factor_portfolio_return(factor, td_ret, holding_time=20, long_short=True)
     port_metric_summary['factor_name'] = factor_name
     table_dirpath = f'{base_dirpath}/BTtable'
     os.makedirs(table_dirpath, exist_ok=True)
@@ -85,9 +86,6 @@ def load_factor_and_return(stat_date, factor_name, config):
     plot_quantile_netvalue(port_netvalue_summary, nv_group_filepath)
     
     
-    
-
-
 
 if __name__ == "__main__":
     # read config file

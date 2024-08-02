@@ -18,15 +18,15 @@ features:
 factors: 
     facType_one: !inc factors.yml
 
+factor_dbPath: 'dfs://FACTOR_TABLE'
+factor_tbName: 'freq_3sec'
+
 evaluation:
     quantiles: 5
     equal_quantile: True
     bins: null
     max_loss: 0.5
     zero_aware: False
-
-factor_dbPath: 'dfs://FACTOR_TABLE'
-factor_tbName: 'freq_3sec'
 
 price_info:
     price_dbPath: 'dfs://CROSS_SECTION_3sec'

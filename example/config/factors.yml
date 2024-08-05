@@ -1,18 +1,20 @@
-# close_ret:
-#   func_name: "ret"
-#   desc: "收益率"
-#   args:
-#     - "close"
-#   kwargs:
-#     shift: 1
+close_ret:
+  func_name: "ret"
+  desc: "收益率"
+  args:
+    - "close"
+  kwargs:
+    shift: 1
+  param_scan:
+    - ["shift", [1, 10, 20, 60, 100, 200]]
 
-# pv_corr:
-#   func_name: "ts_corr"
-#   desc: "价量之间相关性" 
-#   args:
-#     - "close"
-#     - "vol"
-#   kwargs: {}
+pv_corr:
+  func_name: "ts_corr"
+  desc: "价量之间相关性" 
+  args:
+    - "close"
+    - "vol"
+  kwargs: {}
 
 # td_pv_corr_5min:
 #   formula: "ts_corr(ffill_na(vwap), vol, window=5*20)"
@@ -262,84 +264,84 @@
 #   desc: "委托买卖量的相对比值"
 
 ## ======from other research
-trade_num_in_high_price_0.8:
-  formula: "trade_info_in_price_region(add(td_buy_n, td_sell_n), close, op=gt, window=5*20, perc=0.8)"
-  desc: "高价格区间成交笔数占比"
+# trade_num_in_high_price_0.8:
+#   formula: "trade_info_in_price_region(add(td_buy_n, td_sell_n), close, op=gt, window=5*20, perc=0.8)"
+#   desc: "高价格区间成交笔数占比"
 
-trade_vol_in_high_price_0.8:
-  formula: "trade_info_in_price_region(add(td_buy_v, td_sell_v), close, op=gt, window=5*20, perc=0.8)"
-  desc: "高价格区间成交笔数占比"
+# trade_vol_in_high_price_0.8:
+#   formula: "trade_info_in_price_region(add(td_buy_v, td_sell_v), close, op=gt, window=5*20, perc=0.8)"
+#   desc: "高价格区间成交笔数占比"
 
-trade_avgvol_in_high_price_0.8:
-  formula: "trade_avgvol_in_high_price(add(td_buy_v, td_sell_v), add(td_buy_n, td_sell_n), close, op=gt, window=5*20, perc=0.8)"
-  desc: "高价格区间成交笔数占比"
-
-
-trade_num_in_low_price_0.2:
-  formula: "trade_info_in_price_region(add(td_buy_n, td_sell_n), close, op=lt, window=5*20, perc=0.2)"
-  desc: "高价格区间成交笔数占比"
-
-trade_vol_in_low_price_0.2:
-  formula: "trade_info_in_price_region(add(td_buy_v, td_sell_v), close, op=lt, window=5*20, perc=0.2)"
-  desc: "高价格区间成交笔数占比"
-
-trade_avgvol_in_low_price_0.2:
-  formula: "trade_avgvol_in_high_price(add(td_buy_v, td_sell_v), add(td_buy_n, td_sell_n), close, op=lt, window=5*20, perc=0.2)"
-  desc: "高价格区间成交笔数占比"
-
-ret_v_corr:
-  formula: "ts_corr(ret(close), vol, window=5*20)"
-  desc: "收益率和成交量之间的相关性"
-
-ret_n_corr:
-  formula: "ts_corr(ret(close), add(td_buy_n, td_sell_n), window=5*20)"
-  desc: "收益率和成交笔数之间的相关性"
-
-ret_avgvol_corr:
-  formula: "ts_corr(ret(close), fill_na(div(vol, add(td_buy_n, td_sell_n))), window=5*20)"
-  desc: "收益率和成交均量之间的相关性"
-
-pv_corr_5min:
-  formula: "ts_corr(ret(close), vol, window=5*20)"
-  desc: "价量之间相关性"
-
-price_n_corr:
-  formula: "ts_corr(ret(close), add(td_buy_n, td_sell_n), window=5*20)"
-  desc: "价格和成交笔数之间的相关性"
-
-price_avgvol_corr:
-  formula: "ts_corr(ret(close), fill_na(div(vol, add(td_buy_n, td_sell_n))), window=5*20)"
-  desc: "价格和成交均量之间的相关性"
+# trade_avgvol_in_high_price_0.8:
+#   formula: "trade_avgvol_in_high_price(add(td_buy_v, td_sell_v), add(td_buy_n, td_sell_n), close, op=gt, window=5*20, perc=0.8)"
+#   desc: "高价格区间成交笔数占比"
 
 
-HCVOL:
-  formula: "HCVOL(ffill_na(td_buy_p), close, td_buy_v, window=5*20)"
-  desc: "买入浮亏的交易量占比"
+# trade_num_in_low_price_0.2:
+#   formula: "trade_info_in_price_region(add(td_buy_n, td_sell_n), close, op=lt, window=5*20, perc=0.2)"
+#   desc: "高价格区间成交笔数占比"
 
-LCVOL:
-  formula: "LCVOL(ffill_na(td_sell_p), close, td_sell_v, window=5*20)"
-  desc: "卖出反弹浮亏的交易量占比"
+# trade_vol_in_low_price_0.2:
+#   formula: "trade_info_in_price_region(add(td_buy_v, td_sell_v), close, op=lt, window=5*20, perc=0.2)"
+#   desc: "高价格区间成交笔数占比"
 
-HCP:
-  formula: "HCP(ffill_na(td_buy_p), close, window=5*20)"
-  desc: "买入浮亏的价格偏离程度"
+# trade_avgvol_in_low_price_0.2:
+#   formula: "trade_avgvol_in_high_price(add(td_buy_v, td_sell_v), add(td_buy_n, td_sell_n), close, op=lt, window=5*20, perc=0.2)"
+#   desc: "高价格区间成交笔数占比"
 
-LCP:
-  formula: "LCP(ffill_na(td_sell_p), close, window=5*20)"
-  desc: "卖出反弹的价格偏离程度"
+# ret_v_corr:
+#   formula: "ts_corr(ret(close), vol, window=5*20)"
+#   desc: "收益率和成交量之间的相关性"
 
-LI:
-  formula: "div(ts_std(close, window=5*20), ts_mean(close, window=5*20))"
-  desc: "成交价格流动性指标"
+# ret_n_corr:
+#   formula: "ts_corr(ret(close), add(td_buy_n, td_sell_n), window=5*20)"
+#   desc: "收益率和成交笔数之间的相关性"
 
-VLI:
-  formula: "div(ts_std(vol, window=5*20), ts_mean(vol, window=5*20))"
-  desc: "成交量流动性指标"
+# ret_avgvol_corr:
+#   formula: "ts_corr(ret(close), fill_na(div(vol, add(td_buy_n, td_sell_n))), window=5*20)"
+#   desc: "收益率和成交均量之间的相关性"
 
-bs_power_rough:
-  formula: "bs_power_rough(en_buy_v, en_buy_p, en_sell_v, en_sell_p)"
-  desc: "买卖委托力量的粗略估计"
+# pv_corr_5min:
+#   formula: "ts_corr(ret(close), vol, window=5*20)"
+#   desc: "价量之间相关性"
 
-bs_td_power_rough:
-  formula: "bs_power_rough(td_buy_v, td_buy_p, td_sell_v, td_sell_p)"
-  desc: "买卖成交力量的粗略估计"
+# price_n_corr:
+#   formula: "ts_corr(ret(close), add(td_buy_n, td_sell_n), window=5*20)"
+#   desc: "价格和成交笔数之间的相关性"
+
+# price_avgvol_corr:
+#   formula: "ts_corr(ret(close), fill_na(div(vol, add(td_buy_n, td_sell_n))), window=5*20)"
+#   desc: "价格和成交均量之间的相关性"
+
+
+# HCVOL:
+#   formula: "HCVOL(ffill_na(td_buy_p), close, td_buy_v, window=5*20)"
+#   desc: "买入浮亏的交易量占比"
+
+# LCVOL:
+#   formula: "LCVOL(ffill_na(td_sell_p), close, td_sell_v, window=5*20)"
+#   desc: "卖出反弹浮亏的交易量占比"
+
+# HCP:
+#   formula: "HCP(ffill_na(td_buy_p), close, window=5*20)"
+#   desc: "买入浮亏的价格偏离程度"
+
+# LCP:
+#   formula: "LCP(ffill_na(td_sell_p), close, window=5*20)"
+#   desc: "卖出反弹的价格偏离程度"
+
+# LI:
+#   formula: "div(ts_std(close, window=5*20), ts_mean(close, window=5*20))"
+#   desc: "成交价格流动性指标"
+
+# VLI:
+#   formula: "div(ts_std(vol, window=5*20), ts_mean(vol, window=5*20))"
+#   desc: "成交量流动性指标"
+
+# bs_power_rough:
+#   formula: "bs_power_rough(en_buy_v, en_buy_p, en_sell_v, en_sell_p, close)"
+#   desc: "买卖委托力量的粗略估计"
+
+# bs_td_power_rough:
+#   formula: "bs_power_rough(td_buy_v, td_buy_p, td_sell_v, td_sell_p, close)"
+#   desc: "买卖成交力量的粗略估计"

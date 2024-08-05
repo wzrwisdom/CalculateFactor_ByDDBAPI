@@ -5,23 +5,22 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-def get_factor_ic_summary_info(data):
-    group_neutral = False
-    ic_data = perf.factor_information_coefficient(data, group_neutral)
+# def get_factor_ic_summary_info(data):
+#     group_neutral = False
+#     ic_data = perf.factor_information_coefficient(data, group_neutral)
 
-
-    ic_summary_table = pd.DataFrame()
-    ic_summary_table["IC Mean"] = ic_data.mean()
-    ic_summary_table["IC Std."] = ic_data.std()
-    ic_summary_table["Risk-Adjusted IC"] = \
-        ic_data.mean() / ic_data.std()
-    t_stat, p_value = stats.ttest_1samp(ic_data, 0, nan_policy='omit')
-    ic_summary_table["t-stat(IC)"] = t_stat
-    ic_summary_table["p-value(IC)"] = p_value
-    ic_summary_table["IC Skew"] = stats.skew(ic_data, nan_policy='omit')
-    ic_summary_table["IC Kurtosis"] = stats.kurtosis(ic_data, nan_policy='omit')
-    ic_summary_table['IC win rate'] = (ic_data > 0).sum() / ic_data.count()
-    return ic_summary_table
+#     ic_summary_table = pd.DataFrame()
+#     ic_summary_table["IC Mean"] = ic_data.mean()
+#     ic_summary_table["IC Std."] = ic_data.std()
+#     ic_summary_table["ICIR"] = \
+#         ic_data.mean() / ic_data.std()
+#     t_stat, p_value = stats.ttest_1samp(ic_data, 0, nan_policy='omit')
+#     ic_summary_table["t-stat(IC)"] = t_stat
+#     ic_summary_table["p-value(IC)"] = p_value
+#     ic_summary_table["IC Skew"] = stats.skew(ic_data, nan_policy='omit')
+#     ic_summary_table["IC Kurtosis"] = stats.kurtosis(ic_data, nan_policy='omit')
+#     ic_summary_table['IC win rate'] = (ic_data > 0).sum() / ic_data.count()
+#     return ic_summary_table
 
 
 class MaxLossExceededError(Exception):
@@ -47,7 +46,13 @@ def quantize_factor(factor_data, config, no_raise=False):
                 for i in range(_quantiles):
                     start, end = edges[i], edges[i+1]
                     quantiles_list += ([i+1] * (end - start))
-                return pd.Series(quantiles_list, x.sort_values().index, name=x.name).sort_index()        
+
+                x.name = 'value'
+                tmp_x = x.reset_index()
+                tmp_x_sorted = tmp_x.sort_values(by=['value', 'securityid'])
+                x_sorted_index = pd.MultiIndex.from_frame(tmp_x_sorted[['tradetime', 'securityid']])
+                
+                return pd.Series(quantiles_list, x_sorted_index).sort_index()        
             elif _bins is not None and _quantiles is None and not _zero_aware:
                 return pd.cut(x, _bins, labels=False) + 1
             elif _bins is not None and _quantiles is None and _zero_aware:
@@ -61,7 +66,7 @@ def quantize_factor(factor_data, config, no_raise=False):
             if _no_raise:
                 return pd.Series(index=x.index)
             raise e
-    grouper = [factor_data.index.get_level_values('datetime')]
+    grouper = [factor_data.index.get_level_values('tradetime')]
     factor_quantile = factor_data.groupby(grouper)['factor'] \
         .apply(quantile_calc, config['quantiles'], config['bins'], config['equal_quantile'], config['zero_aware'], no_raise)
     factor_quantile.name = 'factor_quantile'
@@ -69,8 +74,9 @@ def quantize_factor(factor_data, config, no_raise=False):
 
 
 def get_clean_data(factor_and_ret, config):
+    factor_and_ret = factor_and_ret.copy()
     initial_amount = float(len(factor_and_ret.index))
-    factor_and_ret.index = factor_and_ret.index.rename(['datetime', 'asset'])
+    factor_and_ret.index = factor_and_ret.index.rename(['tradetime', 'securityid'])
     
     factor_and_ret = factor_and_ret.dropna()
     fwdret_amount = float(len(factor_and_ret.index))
@@ -109,7 +115,7 @@ def form_portforlio_weight(factor_data, group_i, ngroup, holding_time, reverse=F
     else:
         return factor_data[factor_data['factor_quantile'] == group_i]
         
-    # grouper = [factor_data.index.get_level_values('datetime')]
+    # grouper = [factor_data.index.get_level_values('tradetime')]
     # def cal_wt(group):
     #     group['wt'] = 1./group.shape[0]/holding_time
     #     return group
@@ -166,7 +172,8 @@ def calc_stock_pnl(port_weight, ret_df, holding_time):
     pos = pos.drop(pos[pos['tradetime'] > last_ts].index) 
        
     pos = pos.merge(ret_df, on=['tradetime', 'securityid'], how='left')
-    pos['cumret'] = pos.groupby(['securityid', 'tranche'])['ret'].transform(lambda x: np.cumprod(1 + x))
+    pos['new_ret'] = pos['ret'] + 1
+    pos['cumret'] = pos.groupby(['securityid', 'tranche'])['new_ret'].cumprod()
     pos['expr'] = pos['cumret'] * pos['wt']
     pos['pnl'] = pos['expr'] * pos['ret'] / (1 + pos['ret'])
     pos.loc[pos['age']==0, 'pnl'] = 0
@@ -275,7 +282,7 @@ def get_factor_ic_summary_info(ic_data, by_group=False):
         ic_summary_table['IC win rate'] = (ic_data > 0).sum() / ic_data.count()
         return ic_summary_table
 
-def plot_quantile_ic_bar(ic_by_q,
+def plot_quantile_info_bar(ic_by_q,
                          by_group=False,
                          ylim_percentiles=None,
                          ax=None):
@@ -326,9 +333,9 @@ def plot_quantile_ic_bar(ic_by_q,
 
         return ax
     
-def plot_quantile_ic(ic_quantile_summary, plot_filepath):
+def plot_quantile_info(quantile_summary, plot_filepath):
     fig, ax = plt.subplots()
-    plot_quantile_ic_bar(ic_quantile_summary,
+    plot_quantile_info_bar(quantile_summary,
                             by_group=False,
                             ylim_percentiles=None,
                             ax=ax)
@@ -358,7 +365,7 @@ def factor_information_coefficient(factor_data, by_group=False):
             .apply(lambda x: stats.spearmanr(x, f)[0])
         return _ic
     
-    grouper = [factor_data.index.get_level_values('datetime')]
+    grouper = [factor_data.index.get_level_values('tradetime')]
     
     if by_group:
         grouper.append('factor_quantile')
@@ -366,3 +373,42 @@ def factor_information_coefficient(factor_data, by_group=False):
     ic = factor_data.groupby(grouper).apply(src_ic)
     return ic
 
+def factor_timeSeries_information_coefficient(factor_data):
+    def src_ic(group):
+        f = group['factor']
+        _ic = group[get_forward_returns_columns(factor_data.columns)] \
+            .apply(lambda x: stats.spearmanr(x, f)[0])
+        return _ic
+        
+    ic = factor_data.groupby('securityid').apply(src_ic)
+    return ic
+
+
+def factor_group_rough_return(factor_data, dict_col_holding_time = {'1m': 20, '3m': 60, '5m': 100}, long_short=True):
+    grouper = ['factor_quantile', 'tradetime']
+    def src_avg_return(group):
+        return group[get_forward_returns_columns(factor_data.columns)].mean()
+    
+    avg_return_perTime = factor_data.groupby(grouper).apply(src_avg_return)
+
+    def src_port_rough_return(group):
+        total_num = len(group)
+        
+        values = []
+        indices = []
+        for col, holding_time in dict_col_holding_time.items():
+        
+            final_price = 0
+            for i in range(holding_time):
+                index_list = range(i, total_num, holding_time)
+                final_price +=(group.iloc[index_list][col]+1).cumprod().iloc[-1]
+            final_price = final_price / holding_time
+            values.append(final_price)
+            indices.append(col)
+        return pd.Series(values, index=indices)
+    
+    port_rough_return = avg_return_perTime.groupby('factor_quantile').apply(src_port_rough_return)
+    port_rough_return = port_rough_return - 1
+    if long_short:
+        port_rough_return.loc['hedge'] = port_rough_return.loc[1] - port_rough_return.loc[5]
+    return port_rough_return

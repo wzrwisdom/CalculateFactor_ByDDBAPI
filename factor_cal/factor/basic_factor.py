@@ -49,6 +49,15 @@ class BasicFactor:
         self.output_data = None  # pandas dataframe
     
     @property
+    def param_scan(self):
+        return self._param_scan
+    
+    @param_scan.setter
+    def param_scan(self, param_scan):
+        self._param_scan = param_scan
+    
+    
+    @property
     def desc(self):
         return self._desc
     
@@ -128,6 +137,20 @@ class BasicFactor:
         self.args = args
         self.kwargs = kwargs
     
+    def reset_kwargs_info(self, kwargs_list):
+        if (kwargs_list is None) or (len(kwargs_list) == 0):
+            return
+        if (self.kwargs_info is not None) and (len(self.kwargs_info) > 0):
+            self.kwargs_info = kwargs_list[0]
+            del kwargs_list[0]
+        
+        for arg in self.args_info:
+            if isinstance(arg, BasicFactor):
+                arg.reset_kwargs_info(kwargs_list)
+            elif isinstance(arg, str):
+                continue
+        
+    
     def set_dates_and_secs(self, dates, secs):
         self.dates = dates
         self.secs = secs
@@ -138,6 +161,7 @@ class BasicFactor:
         else:
             features.set_dates_and_secs_by_feat(self.args_info[0])
         self.set_dates_and_secs(features.get_dates(), features.get_secs())
+    
 
     def get_dates(self):
         return self.dates
@@ -148,7 +172,9 @@ class BasicFactor:
     def calculate(self, features, date):
         self.prepare_args(self.args_info, features, date)
         self.prepare_kwargs(self.kwargs_info)
-        self.data = self.func(*self.args, **self.kwargs)   
+        self.data = self.func(*self.args, **self.kwargs)  
+        return self.data
+    
     
     def prepare_data(self):
         factor_vals = self.data.flatten(order='F')
@@ -164,9 +190,14 @@ class BasicFactor:
             'value': factor_vals
             })
         self.output_data = df
+        return df
 
-    def save(self, table: FactorTable):
-        self.prepare_data()
+    def set_ouput_data(self, data):
+        self.ouput_data = data
+
+    def save(self, table: FactorTable, need_prepare=True):
+        if need_prepare:
+            self.prepare_data()
         table.save(self.output_data)
     
     def get_data(self):

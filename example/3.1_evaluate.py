@@ -143,8 +143,8 @@ if __name__ == "__main__":
     ret_type = 'close_return'
     for facType in config['factors']:
         for i, factor_name in enumerate(config['factors'][facType]):
-            if (i >= 1):
-                break
+            # if (i >= 1):
+            #     break
             print("Evaluating factor: ", factor_name, " ...", flush=True)
             process_perFactor(factor_name, start_date, end_date, config, ret_type)
     

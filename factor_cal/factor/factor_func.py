@@ -108,7 +108,7 @@ def subtract(x:np.ndarray, y:np.ndarray) -> np.ndarray:
     return np.subtract(x, y)
 
 @register_facFunc('avoid_zero')
-def avoid_zero(x:np.ndarray, small_num=1e-4) -> np.ndarray:
+def avoid_zero(x:np.ndarray, small_num:float=1e-4) -> np.ndarray:
     return np.where(x == 0, small_num, x)
 
 @register_facFunc('add')
@@ -178,6 +178,16 @@ def ohlc_ratio(o:np.ndarray, h:np.array, l:np.array, c:np.array, window:int=20) 
     res.where((h - l) != 0, 0, inplace=True)
     return res.to_numpy()
 
+@register_facFunc('close_adjusted')
+def close_adjusted(close:np.ndarray , window:int=20) -> np.ndarray:
+    return divide(subtract(close, ts_mean(close, window)), ts_std(close, window) )
+
+
+@register_facFunc('avg_price')
+def avg_price(price:np.ndarray, vol:np.ndarray, window:int=10) -> np.ndarray:
+    return divide(ts_sum(multiply(price, vol), window), ts_sum(vol, window))
+
+
 @register_facFunc('best_v_imbalance')
 def best_v_imbalance(bv:np.ndarray, b1:np.ndarray, sv:np.ndarray, s1:np.ndarray, shift:int=1) -> np.ndarray:
     bv = pd.DataFrame(bv)
@@ -223,8 +233,8 @@ def trade_info_in_price_region(number, price, op:str='gt', window:int=5*20, perc
     return res.to_numpy()
 
 
-@register_facFunc('trade_avgvol_in_high_price')
-def trade_avgvol_in_high_price(vol, num, price, op:str='gt', window:int=5*20, perc:float=0.8):
+@register_facFunc('trade_avgvol_in_price_region')
+def trade_avgvol_in_price_price(vol, num, price, op:str='gt', window:int=5*20, perc:float=0.8):
     assert (num.shape == price.shape) and (vol.shape == price.shape), "The shape of vol, num and price should be the same"
     p_df = pd.DataFrame(price)
     prank_df = p_df.rolling(window=window).rank(pct=True, numeric_only=True)
@@ -303,12 +313,18 @@ def LCP(cur_price:np.ndarray, close:np.ndarray, window:int=20) -> np.ndarray:
         rolling_res[i+window-1,:] = np.nanmean(new_p_window, axis=0) / c_window[-1]
     return rolling_res
 
+@register_facFunc("LI")
+def LI(close:np.ndarray, window:int=20) -> np.ndarray:
+    return divide(ts_std(close, window), ts_mean(close, window))
+
 
 @register_facFunc("bs_power_rough")
 def bs_power_rough(buy_v:np.array, buy_p:np.array, sell_v:np.array, sell_p:np.array, close:np.array, window:int=20) -> np.ndarray:
     assert buy_v.shape == buy_p.shape == sell_v.shape == sell_p.shape, "The shape of buy_v, buy_p, sell_v and sell_p should be the same"
     n_obs, n_stock = buy_v.shape
     
+    buy_p = np.nan_to_num(buy_p, nan=0)
+    sell_p = np.nan_to_num(sell_p, nan=0)
     # Initialize the array for storing the rolling information
     rolling_res = np.full((n_obs, n_stock), np.nan)
     
@@ -319,7 +335,18 @@ def bs_power_rough(buy_v:np.array, buy_p:np.array, sell_v:np.array, sell_p:np.ar
         sp_window = sell_p[i:i+window, :]
         c = close[i+window-1, :]
         
+        
         buy_power = bv_window * (bp_window / c)
         sell_power = sv_window * ((2*c - sp_window) / c)
-        rolling_res[i+window-1,:] = buy_power.sum(axis=0) - sell_power.sum(axis=0)
+        buy_power = np.nansum(buy_power, axis=0)
+        sell_power = np.nansum(sell_power, axis=0)
+        rolling_res[i+window-1,:] = (buy_power - sell_power) / (buy_power + sell_power + 1e-4)
     return rolling_res
+
+def numpy_ffill(arr):
+    arr = arr.T 
+    mask = np.isnan(arr)
+    idx = np.where(~mask, np.arange(mask.shape[1]), 0)
+    np.maximum.accumulate(idx, axis=1, out=idx)
+    out = arr[np.arange(idx.shape[0])[:, None], idx]
+    return out.T

@@ -45,8 +45,17 @@ class BasicFactor:
         self.args_type = func_type['args']
         self.kwargs_type = func_type['kwargs']
         self.return_type = func_type['return_type']
+        self.negative = False
         self.data = None  # nmpy array
         self.output_data = None  # pandas dataframe
+        
+    @property
+    def negative(self):
+        return self._negative
+    
+    @negative.setter
+    def negative(self, negative):
+        self._negative = negative
     
     @property
     def param_scan(self):
@@ -130,7 +139,7 @@ class BasicFactor:
             if (kwarg_type != str) and (kwarg_name in kwargs) and isinstance(kwargs[kwarg_name], str):
                 ret[kwarg_name] = kwarg_type(eval(kwargs[kwarg_name]))
             else:
-                ret[kwarg_name] = kwargs.get(kwarg_name, kwarg_default)
+                ret[kwarg_name] = kwarg_type(kwargs.get(kwarg_name, kwarg_default))
         self.kwargs = ret
         
     def set_args(self, *args, **kwargs):
@@ -140,9 +149,12 @@ class BasicFactor:
     def reset_kwargs_info(self, kwargs_list):
         if (kwargs_list is None) or (len(kwargs_list) == 0):
             return
-        if (self.kwargs_info is not None) and (len(self.kwargs_info) > 0):
-            self.kwargs_info = kwargs_list[0]
-            del kwargs_list[0]
+        if (self.kwargs_type is not None) and (len(self.kwargs_type) > 0):
+            need_params = [i[0] for i in self.kwargs_type]
+            fill_flag = all(i in need_params for i in kwargs_list[0].keys())
+            if fill_flag:
+                self.kwargs_info = kwargs_list[0]
+                del kwargs_list[0]
         
         for arg in self.args_info:
             if isinstance(arg, BasicFactor):
@@ -173,11 +185,13 @@ class BasicFactor:
         self.prepare_args(self.args_info, features, date)
         self.prepare_kwargs(self.kwargs_info)
         self.data = self.func(*self.args, **self.kwargs)  
-        return self.data
     
     
     def prepare_data(self):
-        factor_vals = self.data.flatten(order='F')
+        if self.negative:
+            factor_vals = (-1*self.data).flatten(order='F')
+        else:
+            factor_vals = self.data.flatten(order='F')
         
         # Calculate the Cartesian product of dates and secs
         pos = np.meshgrid(self.dates, self.secs)
@@ -192,8 +206,8 @@ class BasicFactor:
         self.output_data = df
         return df
 
-    def set_ouput_data(self, data):
-        self.ouput_data = data
+    def set_output_data(self, data):
+        self.output_data = data
 
     def save(self, table: FactorTable, need_prepare=True):
         if need_prepare:

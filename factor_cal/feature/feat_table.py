@@ -1,8 +1,8 @@
 import functools
 from factor_cal.utils import ddb_utils as du
 
-# Obtain the session object from the singleton instance
-s = du.DDBSessionSingleton().get_session()
+# # Obtain the session object from the singleton instance
+# s = du.DDBSessionSingleton().get_session()
 
 class DDB_FeatTable:
     def __init__(self, ddb_name, tb_name, time_col, sec_col, other_cols):
@@ -14,6 +14,7 @@ class DDB_FeatTable:
     
     @functools.lru_cache(maxsize=2)
     def get_table(self, date, start_time=None, end_time=None, sec_list=None):
+        s = du.DDBSessionSingleton().get_session()
         table = s.loadTable(dbPath=self.ddb_name, tableName=self.tb_name)
         
         # filter the table by start_time, end_time, and sec_list
@@ -41,6 +42,7 @@ class DDB_FeatTable:
         return table_name
     
     def get_feature(self, feat_colname, date, start_time=None, end_time=None, sec_list=None):
+        s = du.DDBSessionSingleton().get_session()
         cur_table_name = self.get_table(date, start_time, end_time, sec_list)
         cur_tb = s.loadTable(tableName=cur_table_name)
         if cur_tb.rows == 0:

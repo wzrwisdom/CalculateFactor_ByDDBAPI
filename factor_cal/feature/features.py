@@ -1,5 +1,5 @@
 import functools
-from factor_cal.utils.ddb_utils import s
+import factor_cal.utils.ddb_utils as du
 from factor_cal.feature.feat_table import DDB_FeatTable
 
 class Features:

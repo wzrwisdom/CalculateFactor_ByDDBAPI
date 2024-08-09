@@ -4,7 +4,7 @@ import pandas as pd
 import dolphindb as ddb
 import dolphindb.settings as keys
 
-from factor_cal.utils.ddb_utils import s
+import factor_cal.utils.ddb_utils as du
 
 
 class BasicTable:
@@ -13,16 +13,16 @@ class BasicTable:
         self.tb_name = tb_name
     
     def _exist_db(self):
-        return s.existsDatabase(self.db_path)
+        return du.DDBSessionSingleton().get_session().existsDatabase(self.db_path)
     
     def _exist_tb(self):
-        return s.existsTable(dbUrl=self.db_path, tableName=self.tb_name)
+        return du.DDBSessionSingleton().get_session().existsTable(dbUrl=self.db_path, tableName=self.tb_name)
     
     def _drop_db(self):
-        s.dropDatabase(self.db_path)
+        du.DDBSessionSingleton().get_session().dropDatabase(self.db_path)
     
     def _drop_tb(self):
-        s.dropTable(dbPath=self.db_path, tableName=self.tb_name)
+        du.DDBSessionSingleton().get_session().dropTable(dbPath=self.db_path, tableName=self.tb_name)
     
     @abc.abstractmethod
     def _create_db(self):
@@ -33,10 +33,10 @@ class BasicTable:
         pass
 
     def get_db(self) -> ddb.database:
-        return s.database(dbPath=self.db_path)
+        return du.DDBSessionSingleton().get_session().database(dbPath=self.db_path)
     
     def get_tb(self) -> ddb.table:
-        return s.loadTable(dbPath=self.db_path, tableName=self.tb_name)
+        return du.DDBSessionSingleton().get_session().loadTable(dbPath=self.db_path, tableName=self.tb_name)
     
     @abc.abstractmethod
     def save(self, data):
@@ -63,6 +63,7 @@ class SecLevelFacTable(FactorTable):
     def _create_db(self):
         if self._exist_db():
             self._drop_db()
+        s = du.DDBSessionSingleton().get_session()
         datehours = np.array(pd.date_range(start='2023-04-01 00:00:00', end='2023-04-01 12:00:00', freq='H'), dtype="datetime64[h]")
         db1 = s.database(partitionType=keys.VALUE, partitions=datehours)
         db2 = s.database(partitionType=keys.VALUE, partitions=['f1', 'f2'])
@@ -73,7 +74,7 @@ class SecLevelFacTable(FactorTable):
             raise Warning(f"Database {self.db_path} does not exist")
         if self._exist_tb():
             self._drop_tb()
-        
+        s = du.DDBSessionSingleton().get_session()
         s.run("schema_t = table(100:0, `tradetime`securityid`factorname`value, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE])")
         schema_t = s.table(data="schema_t")
         pt = self.get_db().createPartitionedTable(schema_t, self.tb_name, 
@@ -82,6 +83,7 @@ class SecLevelFacTable(FactorTable):
                 keepDuplicates="LAST", sortKeyMappingFunction=["hashBucket{,500}"])
         
     def save(self, data:pd.DataFrame):
+        s = du.DDBSessionSingleton().get_session()
         tb = s.table(data=data)
         self.get_tb().append(tb)
         
@@ -103,6 +105,7 @@ class SecLevelFacTable(FactorTable):
         sql_line = sql.sort(["securityid", "tradetime"], ascending=True).showSQL()
         table_name = f"t_{self.tb_name}"
         sql_line = table_name + ' = ' + sql_line
+        s = du.DDBSessionSingleton().get_session()
         s.run(sql_line)
         return table_name
 
@@ -130,6 +133,7 @@ class PriceTable(BasicTable):
         sql_line = sql.sort([self.sec_col, self.time_col], ascending=True).showSQL()
         table_name = f"t_{self.tb_name}"
         sql_line = table_name + ' = ' + sql_line
+        s = du.DDBSessionSingleton().get_session()
         s.run(sql_line)
         return table_name
     

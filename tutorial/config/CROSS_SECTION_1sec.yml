@@ -1,0 +1,18 @@
+trade_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        open: "open"
+        close: "close"
+        high: "high"
+        low: "low"
+        vol: "td_vol"
+        # td_buy_n: "td_buy_num"
+        # td_buy_v: "td_buy_vol"
+
+order_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        en_buy_n: "en_buy_num"
+        # en_buy_v: "en_buy_vol"

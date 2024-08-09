@@ -1,0 +1,43 @@
+start_date: '2023.09.22'
+end_date: '2023.09.30'
+
+start_time: '09:30:00'
+end_time: '15:00:00'
+
+# sec_list: ['000002.SZ', '000004.SZ']
+sec_list: "ALL"
+
+features:
+    -  
+        ddb_name: 'dfs://CROSS_SECTION_3sec'
+        tb_features: !inc CROSS_SECTION_3sec.yml
+    # -
+    #     ddb_name: 'dfs://Level2_data'
+    #     tb_features: !inc Level2_data.yml
+
+factors: 
+    facType_one: !inc factors.yml
+
+factor_dbPath: 'dfs://FACTOR_TABLE'
+factor_tbName: 'freq_3sec'
+
+evaluation:
+    quantiles: 5
+    equal_quantile: True
+    bins: null
+    max_loss: 0.5
+    zero_aware: False
+
+price_info:
+    price_dbPath: 'dfs://CROSS_SECTION_3sec'
+    price_tbName: 'trade_info'
+    price_cols: ['close']
+    sec_col: 'securityid'
+    time_col: 'tradetime'
+
+snap_price_info:
+    price_dbPath: 'dfs://CROSS_SECTION_3sec'
+    price_tbName: 'snap_info'
+    price_cols: ['b1', 's1', 'bs_avg_price']
+    sec_col: 'securityid'
+    time_col: 'tradetime'

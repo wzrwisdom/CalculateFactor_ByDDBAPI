@@ -340,6 +340,7 @@ def plot_quantile_info(quantile_summary, plot_filepath):
                             ylim_percentiles=None,
                             ax=ax)
     fig.savefig(plot_filepath)
+    plt.close()
 
 def plot_quantile_netvalue(nv_df, plot_filepath):
     # set tradetime as index
@@ -382,6 +383,19 @@ def factor_timeSeries_information_coefficient(factor_data):
         
     ic = factor_data.groupby('securityid').apply(src_ic)
     return ic
+
+# def factor_timeSeries_information_coefficient(factor_data):
+#     factor_data.reset_index(inplace=True)
+#     factor = factor_data.pivot(index='tradetime', columns='securityid', values='factor')
+    
+#     results = []
+#     for i in get_forward_returns_columns(factor_data.columns):
+#         ret = factor_data.pivot(index='tradetime', columns='securityid', values=i)
+#         res = factor.corrwith(ret)
+#         res.name = i
+#         results.append(res)
+    
+#     return pd.concat(results, axis=1)
 
 
 def factor_group_rough_return(factor_data, dict_col_holding_time = {'1m': 20, '3m': 60, '5m': 100}, long_short=True):

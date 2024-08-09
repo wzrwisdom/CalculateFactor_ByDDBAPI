@@ -1,0 +1,70 @@
+trade_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        open: "open"
+        close: "close"
+        high: "high"
+        low: "low"
+        vol: "td_vol"
+        td_buy_n: "td_buy_num"
+        td_buy_v: "td_buy_vol"
+        td_buy_p: "td_buy_price"
+        td_sell_n: "td_sell_num"
+        td_sell_v: "td_sell_vol"
+        td_sell_p: "td_sell_price"
+        vwap: "vwap"
+        mid_ab_m: "middle_buy_active_money"
+        mid_as_m: "middle_sell_active_money"
+        sm_ab_m: "small_buy_active_money"
+        sm_as_m: "small_sell_active_money"
+
+order_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        en_buy_n: "en_buy_num"
+        en_buy_v: "en_buy_vol"
+        en_buy_p: "en_buy_price"
+        en_sell_n: "en_sell_num"
+        en_sell_v: "en_sell_vol"
+        en_sell_p: "en_sell_price"
+
+cancelOrder_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        cancel_buy_n: "cancel_buy_num"
+        cancel_buy_v: "cancel_buy_vol"
+        cancel_buy_m: "cancel_buy_money"
+        cancel_sell_n: "cancel_sell_num"
+        cancel_sell_v: "cancel_sell_vol"
+        cancel_sell_m: "cancel_sell_money"
+        ct_b_med: "cancel_buy_time_med"
+        ct_s_med: "cancel_sell_time_med"
+
+snap_info:
+    time_col: "tradetime"
+    sec_col: "securityid"
+    feat_cols:
+        bs_avg_price: 'bs_avg_price'
+        s1: 's1'
+        b1: 'b1'
+        wb1: 'wb1'
+        wb5: 'wb5'
+        wb10: 'wb10'
+        bv1_sum: 'bv1_sum'
+        bv5_sum: 'bv5_sum'
+        bv10_sum: 'bv10_sum'
+        sv1_sum: 'sv1_sum'
+        sv5_sum: 'sv5_sum'
+        sv10_sum: 'sv10_sum'
+        bbv1_sum: 'bbv1_sum'
+        bbv5_sum: 'bbv5_sum'
+        bbv10_sum: 'bbv10_sum'
+        ssv1_sum: 'ssv1_sum'
+        ssv5_sum: 'ssv5_sum'
+        ssv10_sum: 'ssv10_sum'
+        press_buy_v: 'press_buy_v'
+        press_sell_v: 'press_sell_v'
+

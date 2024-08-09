@@ -1,7 +1,7 @@
 import yaml
 import yaml_include
 import os
-
+from factor_cal.factor import factor_func as ff
 
 def get_dir(file_path):
     file_abspath = os.path.abspath(file_path)

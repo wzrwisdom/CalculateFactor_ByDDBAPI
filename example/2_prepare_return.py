@@ -182,32 +182,32 @@ if __name__ == "__main__":
     # read config file
     config = cfg.BasicConfig('config/config.yml')
     
-    
+    base_dir = "/home/wangzirui/workspace/data"
     dates = pd.date_range(config['start_date'], config['end_date'])
     
     for date in dates:
         date = date.strftime('%Y.%m.%d')
         
-        # print("Calculating return by bid1 and ask1 ...")
-        # ret_df = prepare_bid_ask_return(date, config)
-        # if ret_df is not None:
-        #     base_dir = '/home/wangzirui/workspace/data/bid_ask_return'
-        #     os.makedirs(base_dir, exist_ok=True)
-        #     save_filepath = f'{base_dir}/{date}.pkl'
-        #     ret_df.to_pickle(save_filepath)
+        print("Calculating return by bid1 and ask1 ...")
+        ret_df = prepare_bid_ask_return(date, config)
+        if ret_df is not None:
+            save_dir = f'{base_dir}/bid_ask_return'
+            os.makedirs(save_dir, exist_ok=True)
+            save_filepath = f'{save_dir}/{date}.pkl'
+            ret_df.to_pickle(save_filepath)
     
         print("Calculating return by close...")
         ret_df = prepare_simple_ret(date, config, 'price_info', 'close')
         if ret_df is not None:
-            base_dir = '/home/wangzirui/workspace/data/close_return'
-            os.makedirs(base_dir, exist_ok=True)
-            save_filepath = f'{base_dir}/{date}.pkl'
+            save_dir = f'{base_dir}/close_return'
+            os.makedirs(save_dir, exist_ok=True)
+            save_filepath = f'{save_dir}/{date}.pkl'
             ret_df.to_pickle(save_filepath)
         
         print("Calculating return by bs_avg_price...")
         ret_df = prepare_simple_ret(date, config, 'snap_price_info', 'bs_avg_price')
         if ret_df is not None:
-            base_dir = '/home/wangzirui/workspace/data/bs_avg_price_return'
-            os.makedirs(base_dir, exist_ok=True)
-            save_filepath = f'{base_dir}/{date}.pkl'
+            save_dir = f'{base_dir}/bs_avg_price_return'
+            os.makedirs(save_dir, exist_ok=True)
+            save_filepath = f'{save_dir}/{date}.pkl'
             ret_df.to_pickle(save_filepath)
